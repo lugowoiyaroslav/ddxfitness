@@ -1,0 +1,51 @@
+$xs: 767px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1280px;
+
+@media only screen and (max-width: $xs)
+	.container
+		width: 100%
+		padding: 0 15px
+		box-sizing: border-box
+	.container-fluide
+		width: 100%
+		padding: 0
+		box-sizing: border-box
+@media only screen and (min-width: $sm)
+	.container
+		width: 540px
+		margin: 0 auto
+		position: relative
+@media only screen and (min-width: $md)
+	.container
+		width: 720px
+		margin: 0 auto
+		position: relative
+	.container-fluide
+		width: 720px
+		margin: 0 auto
+		position: relative
+@media (min-width: $lg)
+	.container
+		width: 960px
+		margin: 0 auto
+		position: relative
+	.container-fluide
+		width: 960px
+		margin: 0 auto
+		position: relative
+@media (min-width: $xl)
+	.container
+		width: 1280px
+		margin: 0 auto
+		position: relative
+		padding: 0 20px
+		box-sizing: border-box
+	.container-fluide
+		width: 1280px
+		margin: 0 auto
+		position: relative
+		padding: 0 20px
+		box-sizing: border-box

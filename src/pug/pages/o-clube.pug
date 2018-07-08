@@ -1,0 +1,72 @@
+extends ../layout/main
+
+block content
+	include ../modules/breadcrumbs
+	.page
+		.about.container#tabs
+			.about__tab-header
+				ul.tabs
+					li.tab
+						a(class="active" href="#tab-1") О клубе
+					li.tab
+						a(href="#tab-2") Контакты
+			.about__tab-content
+				.tab_content#tab-1
+					.about__block
+						.faq
+							.faq-content
+								a(class="active" href="#") Что входит в абонемент?
+								p(style={display: 'block'}) А для того, чтобы подчеркнуть достоинства своей фигуры и всегда сверкать ярко посетите диджитал  вертикальный солярий!
+							.faq-content
+								a(href="#") Как получить скидку?
+								p А для того, чтобы подчеркнуть достоинства своей фигуры и всегда сверкать ярко посетите диджитал  вертикальный солярий!
+							.faq-content
+								a(href="#") Зачем нужен браслет?
+								p А для того, чтобы подчеркнуть достоинства своей фигуры и всегда сверкать ярко посетите диджитал  вертикальный солярий!
+							.faq-content
+								a(href="#") Где посмотреть расписание?
+								p А для того, чтобы подчеркнуть достоинства своей фигуры и всегда сверкать ярко посетите диджитал  вертикальный солярий!
+						.address
+							h5 Адрес
+							p г. Москва, район Северное Бутово,<br> ул. Поляны д.8, ТЦ ВиВа
+							h5 Режим работы
+							p Будни: 07:00-24:00 <br>Выходные: 08:00-23:00
+				.tab_content#tab-2
+					.contacts__block
+						.col-3
+							h5 Клиентам
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ncididunt.
+							.contacts__block-info
+								a(href="#") 8 (800) 555-44-33
+								a(href="#") 8 (495) 583-44-33
+								a(href="#") Info@ddxfitness.ru
+						.col-3
+							h5 Клиентам
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ncididunt.
+							.contacts__block-info
+								a(href="#") 8 (800) 555-44-33
+								a(href="#") 8 (495) 583-44-33
+								a(href="#") Info@ddxfitness.ru
+						.col-3
+							h5 Клиентам
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ncididunt.
+							.contacts__block-info
+								a(href="#") 8 (800) 555-44-33
+								a(href="#") 8 (495) 583-44-33
+								a(href="#") Info@ddxfitness.ru
+		include ../modules/map
+		.map__after
+			img(src='static/img/bus.png')
+			p Каждые 20 минут БЕСПЛАТНЫЕ<br> <span>шатлы от метро Бульвар Дмитрия Донского до ТЦ ВиВа</span>
+		.recording
+			.container
+				p Мне нужно больше информации
+				form
+					input(placeholder="ИМЯ" type="text")
+					input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+					button(class="btn btn__midnight_express" type="submit") Узнать
+					.form__group
+						label.checkbox
+							input(checked type="checkbox")
+							.checkbox__text
+						p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>

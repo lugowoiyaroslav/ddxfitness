@@ -1,0 +1,44 @@
+.error__page
+	box-sizing: border-box
+	height: 800px
+	padding: 50px 0
+	background: url(../img/subs_bg.jpg) no-repeat center
+	p
+		color: $midnight_express
+		font-family: $FuturaFuturisC
+		font-size: 48px
+		position: relative
+		margin-left: 100px
+		a
+			color: $tree_poppy
+			border-bottom: 3px solid rgba(215, 127, 60, 0.9)
+	span
+		position: absolute
+		right: 80px
+@media only screen and (min-width: $md) and (max-width: 1279px)
+	.error__page
+		img
+			width: 100%
+			margin-top: 60px
+		p
+			margin-left: 0
+			br
+				display: none
+		span
+			position: relative
+			right: auto
+@media (max-width: $xs)
+	.error__page
+		height: inherit
+		padding: 50px 0
+		background: $whisper
+		p
+			font-size: 24px
+			margin-left: 0
+			a
+				border-bottom: 1px solid rgba(215, 127, 60, 0.9)
+		img
+			width: 100%
+		span
+			position: relative
+			right: auto

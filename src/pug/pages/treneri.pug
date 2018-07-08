@@ -1,0 +1,64 @@
+extends ../layout/main
+
+block content
+	include ../modules/breadcrumbs
+	.container
+		.page
+			h1 Тренеры
+			.trainers__main
+				.trainers__main-menu
+					ul
+						li.current
+							a(href="#") Все тренеры
+						li
+							a(href="#") Персональные
+						li
+							a(href="#") Групповые
+						li
+							a(href="#") Боевые искусства
+				.trainers__main-list
+					.trainers__main-card
+						.card-img
+							img(src='static/img/tr1.jpg')
+						.card-description
+							h2 
+								a(class="ankor" href="#trener") Василий Иванов
+							span.post ПЕРСОНАЛЬНЫЙ ТРЕНЕР
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+							a(class="online-trainers" href="#") Записаться
+					.trainers__main-card
+						.card-img
+							img(src='static/img/tr2.jpg')
+						.card-description
+							h2 
+								a(href="#") Андрей Палий
+							span.post Мастер спорта по лёгкой атлетике
+							p Программа подойдет спортсменов продвинутого уровня, которые готовятся стартам на международных. 
+							a(class="online-trainers" href="#") Записаться
+					.trainers__main-card
+						.card-img
+							img(src='static/img/tr3.jpg')
+						.card-description
+							h2 
+								a(href="#") Татьяна Чурилова
+							span.post ПЕРСОНАЛЬНЫЙ ТРЕНЕР body-shape
+							p Татьяна, участвует в различных соревнованиях и конкурсах по различным спортивным направлениям.
+							a(class="online-trainers" href="#") Записаться
+					.trainers__main-card
+						.card-img
+							img(src='static/img/tr4.jpg')
+						.card-description
+							h2 
+								a(href="#") Дмитрий Константинов
+							span.post Инструктор тренажерного зала
+							p Программа подойдет новичков, и для спортсменов продвинутого уровня, которые готовятся к стартам.
+							a(class="online-trainers" href="#") Записаться
+					.trainers__main-card
+						.card-img
+							img(src='static/img/tr5.jpg')
+						.card-description
+							h2 
+								a(href="#") Кильдяков Юрий
+							span.post ПЕРСОНАЛЬНЫЙ ТРЕНЕР
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.
+							a(class="online-trainers" href="#") Записаться

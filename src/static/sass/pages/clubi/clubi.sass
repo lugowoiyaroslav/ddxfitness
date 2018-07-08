@@ -1,0 +1,170 @@
+.club__choice
+	@include row-between
+	margin-top: 40px
+	margin-bottom: 80px
+	.club__choice-block
+		width: calc(50% - 15px)
+		position: relative
+		.club__choice-block-img-wrap
+			position: relative
+			p
+				color: $white
+				font-size: 72px
+				font-family: $FuturaFuturisC
+				position: absolute
+				bottom: 15px
+				left: 35px
+				margin: 0
+			img
+				width: 100%
+		.club__choice-address-block
+			position: relative
+			padding-left: 35px
+			box-sizing: border-box
+			flex-direction: column
+			@include row-between
+			h5
+				font-family: $FuturaFuturisC
+				font-size: 30px
+				color: $midnight_express
+				margin: 23px 0
+				font-weight: normal
+			p
+				font-family: $FuturaFuturisLightC
+				font-size: 30px
+				color: $midnight_express
+				margin: 0 0 36px
+				&.soon
+					font-size: 63px
+					text-transform: uppercase
+					margin-bottom: 47px
+					margin-top: 65px
+			a
+				width: 330px
+				height: 72px
+				@include row-center
+				align-items: center
+				background-color: $tree_poppy
+				border-radius: 4px
+				text-transform: uppercase
+				text-align: center
+				color: #fff
+				font-family: $FuturaMediumC
+				font-size: 24px
+				cursor: pointer
+				transition: all .3s ease-in-out
+				&:hover
+					box-shadow: 0px 2px 8px rgba(131, 79, 38, 0.4)
+.technologies
+	margin-bottom: 20px
+	.club__choice-block
+		margin-bottom: 60px
+		.club__choice-address-block
+			p
+				margin: 24px 0 34px
+@media only screen and (min-width: $lg) and (max-width: 1279px)
+	.club__choice
+		margin-top: 20px
+		margin-bottom: 20px
+		.club__choice-block
+			margin-bottom: 44px
+			.club__choice-address-block
+				padding: 0
+				a
+					width: 100%
+					font-size: 20px
+					line-height: 76px
+					height: 72px
+					display: block
+					text-align: center
+				h5
+					font-size: 24px
+					padding-left: 10px
+				p
+					font-size: 18px
+					margin: 0 0 23px
+					padding-left: 10px
+					&.soon
+						font-size: 43px
+						margin: 44px 0
+			.club__choice-block-img-wrap
+				p
+					font-size: 36px
+					left: 10px
+					bottom: 10px
+	.technologies
+		.club__choice-block
+			.club__choice-address-block
+				p
+					margin: 24px 0 34px
+@media only screen and (min-width: $md) and (max-width: 991px)
+	.club__choice
+		margin-top: 20px
+		margin-bottom: 20px
+		.club__choice-block
+			margin-bottom: 44px
+			.club__choice-address-block
+				padding: 0
+				a
+					width: 100%
+					font-size: 20px
+					line-height: 76px
+					height: 72px
+					display: block
+					text-align: center
+				h5
+					font-size: 24px
+					padding-left: 10px
+				p
+					font-size: 18px
+					margin: 0 0 23px
+					padding-left: 10px
+					&.soon
+						font-size: 43px
+						margin: 19px 0
+			.club__choice-block-img-wrap
+				p
+					font-size: 36px
+					left: 10px
+					bottom: 10px
+	.technologies
+		.club__choice-block
+			.club__choice-address-block
+				p
+					margin: 24px 0 34px
+@media only screen and (max-width: $xs)
+	.club__choice
+		margin-top: 20px
+		margin-bottom: 20px
+		.club__choice-block
+			width: 100%!important
+			margin-bottom: 44px
+			.club__choice-address-block
+				padding: 0
+				a
+					width: 100%
+					font-size: 20px
+					line-height: 76px
+					height: 72px
+					display: block
+					text-align: center
+				h5
+					font-size: 24px
+					padding-left: 10px
+				p
+					font-size: 18px
+					margin: 0 0 23px
+					padding-left: 10px
+					&.soon
+						font-size: 43px
+						margin: 23px 0
+			.club__choice-block-img-wrap
+				p
+					font-size: 36px
+					left: 10px
+					bottom: 10px
+	.technologies
+		.club__choice-block
+			.club__choice-address-block
+				p
+					margin: 24px 0 34px

@@ -1,0 +1,555 @@
+.subscription
+	height: 1232px
+	background: url('../img/subs_bg.jpg') no-repeat center
+	padding: 50px 0
+	box-sizing: border-box
+	.breadcrumbs
+		margin: 0 auto
+	h1
+		text-align: center
+		display: block
+		margin-top: 11px
+.subscription__plan
+	@include row-start
+	margin-top: 150px
+	.subscription__plan-block
+		width: 33.333%
+		position: relative
+		&:nth-child(2)
+			.plan-block-header
+				top: -135px
+		.plan-block-header
+			position: absolute
+			top: -73px
+			display: flex
+			justify-content: center
+			width: 100%
+		.plan-block-rate
+			background-color: $white
+			box-shadow: 0 4px 8px rgba(0, 0, 0, .14)
+			@include row-start
+			flex-direction: column
+			height: 710px
+			border-radius: 5px
+			position: relative
+			z-index: 9
+			padding-left: 28px
+			box-sizing: border-box
+			ul
+				li
+					list-style: none
+					color: $midnight_express
+					font-family: $FuturaFuturisLightC
+					font-size: 22px
+					margin-bottom: 14px
+					display: block
+					&.disable
+						color: #cdcdcd
+.subscription__plan
+	.subscription__plan-block
+		&:nth-child(1)
+				h2
+					font-family: $FuturaFuturisC
+					font-size: 42px
+					color: #62aac5
+					font-weight: 300
+					display: block
+					margin: 25px 0 30px
+					text-align: center
+					position: relative
+					right: 13px
+				ul
+					li
+						&:before
+							content: ""
+							background: url('../img/check1.png') no-repeat 0 0
+							width: 20px
+							height: 15px
+							display: inline-block
+							margin-right: 10px
+							position: relative
+							top: 3px
+						&.disable
+							&:before
+								content: ""
+								background: url('../img/close.png') no-repeat 0 0
+				.plan-price
+					display: block
+					text-align: center
+					position: relative
+					right: 13px
+					margin-top: 10px
+					padding-top: 30px
+					background: url('../img/plan1_bg.png') no-repeat top center
+					span
+						font-family: $FuturaFuturisC
+						font-size: 32px
+						color: #62aac5
+						font-weight: 300
+						b
+							font-family: 'ALSRubl', sans-serif
+							font-weight: normal
+				.pay
+					background-color: #62aac5
+					font-family: $FuturaMediumC
+					font-size: 24px
+					color: $white
+					text-transform: uppercase
+					margin-right: 42px
+					display: flex
+					min-height: 70px
+					align-items: center
+					justify-content: center
+					border-radius: 4px
+					position: relative
+					top: 26px
+					box-shadow: 0 2px 8px rgba(131, 79, 38, 0.10)
+					transition: box-shadow .3s ease-in-out
+					&:hover
+						box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+		&:nth-child(3)
+				.plan-block-rate
+					padding-left: 41px
+				h2
+					font-family: $FuturaFuturisC
+					font-size: 42px
+					color: $tree_poppy
+					font-weight: 300
+					display: block
+					margin: 25px 0 30px
+					text-align: center
+					position: relative
+					right: 13px
+				ul
+					li
+						&:before
+							content: ""
+							background: url('../img/check3.png') no-repeat 0 0
+							width: 20px
+							height: 15px
+							display: inline-block
+							margin-right: 10px
+							position: relative
+							top: 3px
+						&.disable
+							&:before
+								content: ""
+								background: url('../img/close.png') no-repeat 0 0
+				.plan-price
+					display: block
+					text-align: center
+					position: relative
+					right: 13px
+					margin-top: 10px
+					padding-top: 30px
+					background: url('../img/plan1_bg.png') no-repeat top center
+					span
+						font-family: $FuturaFuturisC
+						font-size: 32px
+						color: $tree_poppy
+						font-weight: 300
+						b
+							font-family: 'ALSRubl', sans-serif
+							font-weight: normal
+				.pay
+					background-color: $tree_poppy
+					font-family: $FuturaMediumC
+					font-size: 24px
+					color: $white
+					text-transform: uppercase
+					margin-right: 27px
+					display: flex
+					min-height: 70px
+					align-items: center
+					justify-content: center
+					border-radius: 4px
+					position: relative
+					top: 26px
+					box-shadow: 0 2px 8px rgba(131, 79, 38, 0.10)
+					transition: box-shadow .3s ease-in-out
+					&:hover
+						box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+
+		.main-rate
+			width: 440px
+			position: absolute
+			box-shadow: 0 6px 18px rgba(0, 0, 0, .20)
+			left: -13px
+			top: -62px
+			height: 835px
+			z-index: 10
+			padding-left: 25px
+			h2
+				color: $midnight_express
+				font-family: $FuturaFuturisC
+				font-size: 42px
+				font-weight: 300
+				display: block
+				margin: 25px 0 30px
+				text-align: center
+				position: relative
+				right: 13px
+			ul
+				li
+					font-size: 24px
+					margin-bottom: 17px
+					&:before
+						content: ""
+						background: url('../img/check2.png') no-repeat 0 0
+						width: 23px
+						height: 16px
+						display: inline-block
+						margin-right: 10px
+						position: relative
+						top: 3px
+			.plan-price
+				display: block
+				text-align: center
+				position: relative
+				right: 13px
+				margin-top: 20px
+				padding-top: 34px
+				background: url('../img/plan2_bg.png') no-repeat top center
+				span
+					font-family: $FuturaFuturisC
+					font-size: 32px
+					color: $midnight_express
+					font-weight: 300
+					b
+						font-family: 'ALSRubl', sans-serif
+						font-weight: normal
+			.pay
+				background-color: $midnight_express
+				font-family: $FuturaMediumC
+				font-size: 24px
+				color: $white
+				text-transform: uppercase
+				margin-right: 0
+				margin-left: 23px
+				width: 344px
+				display: flex
+				min-height: 70px
+				align-items: center
+				justify-content: center
+				border-radius: 4px
+				position: relative
+				top: 34px
+				box-shadow: 0 2px 8px rgba(131, 79, 38, 0.10)
+				transition: box-shadow .3s ease-in-out
+				&:hover
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+.subscription__description
+	padding: 75px 0 45px
+.subscription__description-img
+	@include row-center
+	img
+		margin-right: 100px
+		&:last-child
+			margin-right: 0
+.subscription__description-text
+	@include row-center
+	p
+		color: $midnight_express
+		font-family: $FuturaFuturisLightC
+		font-size: 24px
+		text-align: center
+		margin-top: 40px
+		span
+			font-family: $FuturaFuturisC
+			font-size: 36px
+			margin-top: 14px
+			display: block
+			b
+				font-weight: normal
+.slider__aboniment-nav-prev,.slider__aboniment-nav-next,.slider__br-nav-next,.slider__br-nav-prev
+	display: none
+
+@media only screen and (max-width: 1279px)
+	.subscription
+		height: inherit
+	.subscription__plan
+		display: block
+		margin-top: 35px
+		.subscription__plan-block
+			width: 236px
+			.plan-block-header
+				position: relative
+				top: 12px!important
+				justify-content: flex-start
+				padding-left: 15px
+				img
+					height: 50px
+			.plan-block-rate
+				width: 236px!important
+				height: inherit!important
+				padding: 0 15px !important
+				ul
+					li
+						font-size: 13px!important
+						white-space: nowrap
+						&.disable
+							color: #cdcdcd!important
+							&:before
+								content: ''
+								background: url(../img/close.png) no-repeat 0 0/contain!important
+								top: 2px!important
+			.main-rate
+				position: relative
+				top: inherit
+				left: inherit
+		.slick-current
+			margin: 0 10px
+	.block__smart
+		ul
+			li:before
+				position: relative
+				top: 3px
+				display: inline-block
+				width: 13px!important
+				height: 10px!important
+				margin-right: 10px
+				content: ''
+				background: url(../img/check3.png) no-repeat 0 0/contain!important
+		h2
+			font-size: 26px!important
+			right: 0!important
+			text-align: center
+			color: $tree_poppy
+			font-family: $FuturaFuturisC
+			margin: 10px 0!important
+		.plan-price
+			right: 0!important
+			padding-top: 15px!important
+			position: relative
+			display: block
+			margin-top: 10px
+			text-align: center
+			background: url(../img/plan1_bg.png) no-repeat top center
+			span
+				font-size: 19px!important
+				font-weight: 300
+				font-family: $FuturaFuturisC
+				color: $tree_poppy
+		.pay
+			font-size: 16px!important
+			min-height: 47px!important
+			margin-right: -18px!important
+			margin-left: -18px
+			top: auto !important
+			margin-top: 15px
+			background-color: $tree_poppy
+			border-radius: 4px
+			color: $white
+			text-transform: uppercase
+			font-family: $FuturaMediumC
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+	.block__light
+		ul
+			li:before
+				position: relative
+				top: 3px
+				display: inline-block
+				width: 13px!important
+				height: 10px!important
+				margin-right: 10px
+				content: ''
+				background: url(../img/check1.png) no-repeat 0 0/contain!important
+		h2
+			font-size: 26px!important
+			right: 0!important
+			text-align: center
+			color: $boston_blue!important
+			font-family: $FuturaFuturisC
+			margin: 10px 0!important
+		.plan-price
+			right: 0!important
+			padding-top: 15px!important
+			position: relative
+			display: block
+			margin-top: 10px
+			text-align: center
+			background: url(../img/plan1_bg.png) no-repeat top center
+			span
+				font-size: 19px!important
+				font-weight: 300
+				font-family: $FuturaFuturisC
+				color: $boston_blue!important
+		.pay
+			font-size: 16px!important
+			min-height: 47px!important
+			margin-right: -18px!important
+			margin-left: -18px
+			top: auto !important
+			margin-top: 15px
+			background-color: $boston_blue!important
+			border-radius: 4px
+			color: $white
+			text-transform: uppercase
+			font-family: $FuturaMediumC
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+	.block__infinity
+		ul
+			li
+				margin-bottom: 14px!important
+				&:last-child
+					display: none!important
+				&:before
+					position: relative
+					top: 3px
+					display: inline-block
+					width: 13px!important
+					height: 10px!important
+					margin-right: 10px
+					content: ''
+					background: url(../img/check2-m.png) no-repeat 0 0!important
+		.main-rate
+			box-shadow: 0 4px 8px rgba(0, 0, 0, .14)!important
+		h2
+			font-size: 26px!important
+			right: 0!important
+			text-align: center
+			color: $boston_blue
+			font-family: $FuturaFuturisC
+			margin: 10px 0!important
+		.plan-price
+			right: 0!important
+			padding-top: 15px!important
+			position: relative
+			display: block
+			margin-top: 10px!important
+			text-align: center
+			background: url(../img/plan1_bg.png) no-repeat top center
+			span
+				font-size: 19px!important
+				font-weight: 300
+				font-family: $FuturaFuturisC
+				color: $boston_blue
+		.pay
+			font-size: 16px!important
+			min-height: 47px!important
+			margin-right: -18px!important
+			margin-left: -18px!important
+			top: auto !important
+			margin-top: 15px
+			background-color: $boston_blue
+			border-radius: 4px
+			color: $white
+			width: auto!important
+			text-transform: uppercase
+			font-family: $FuturaMediumC
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+	.subscription__plan-block
+		.plan-price
+			margin-bottom: 35px!important
+		.pay
+			display: none!important
+	.subscription__plan-block.slick-active
+		.plan-price
+			margin-bottom: 0!important
+		.pay
+			display: flex!important
+	.slider__aboniment-nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0 15px
+	.slider__aboniment-nav-prev
+		width: 17px
+		height: 30px
+		display: block
+		background: url('../img/sl-prev.png') no-repeat 0 0
+		text-indent: -9999px
+		position: relative
+		top: 0
+		font-size: 0
+		&:hover
+			background: url('../img/sl-prev-h.png') no-repeat 0 0
+	.slider__aboniment-nav-next
+		width: 17px
+		height: 30px
+		display: block
+		background: url('../img/sl-prev.png') no-repeat 0 0
+		font-size: 0
+		position: relative
+		top: 0
+		transform: rotate(180deg)
+		&:hover
+			background: url('../img/sl-prev-h.png') no-repeat 0 0
+	.subscription__description
+		.subscription__description-slider
+			display: flex
+			justify-content: space-between
+			align-items: center
+		p
+			font-size: 18px
+	.subscription__description-img
+		display: block
+		max-width: 222px
+		img
+			margin-right: 0
+			height: 249px
+	.slider__br-nav-prev
+		width: 17px
+		height: 30px
+		display: block
+		background: url('../img/sl-prev.png') no-repeat 0 0
+		text-indent: -9999px
+		position: relative
+		top: 0
+		font-size: 0
+		&:hover
+			background: url('../img/sl-prev-h.png') no-repeat 0 0
+	.slider__br-nav-next
+		width: 17px
+		height: 30px
+		display: block
+		background: url('../img/sl-prev.png') no-repeat 0 0
+		font-size: 0
+		position: relative
+		top: 0
+		transform: rotate(180deg)
+		&:hover
+			background: url('../img/sl-prev-h.png') no-repeat 0 0
+@media only screen and (min-width: 721px) and (max-width: 1279px)
+	.subscription__plan
+		display: flex
+		padding: 0
+		box-sizing: border-box
+		justify-content: space-between
+		max-width: 722px
+		margin: 0 auto
+		.subscription__plan-block
+			width: 226px
+			.plan-block-rate
+				width: 226px !important
+			.pay
+				display: flex!important
+			.plan-price
+				margin-bottom: 0 !important
+	.slider__aboniment-nav
+		justify-content: center
+	.slider__aboniment-nav-prev,.slider__aboniment-nav-next
+		display: none
+@media only screen and (min-width: 992px) and (max-width: 1279px)
+	.subscription__plan
+		max-width: 960px
+		.subscription__plan-block
+			width: 300px
+			.plan-block-rate
+				width: 300px !important
+	.subscription__description
+		.subscription__description-slider
+			justify-content: center
+	.slider__br-nav-prev
+		margin-right: 60px
+	.slider__br-nav-next
+		margin-left: 60px

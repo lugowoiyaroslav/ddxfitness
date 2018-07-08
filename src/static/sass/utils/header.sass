@@ -1,0 +1,998 @@
+
+.header
+	overflow: hidden
+.logo__mob,.menu__mob
+	display: none
+.header_home
+	width: 100%
+	height: 1000px
+	background: url('../img/header_home_bg.jpg') no-repeat 50% 0
+.header__home-four
+	width: 100%
+	height: 1066px
+	background: url('../img/header_home_bg_four.jpg') no-repeat 50% 0
+	.city
+		opacity: 0
+		font-size: 0
+	.link-club
+		opacity: 0
+		a
+			font-size: 0
+.header__home-opl
+	width: 100%
+	height: 853px
+	background: url('../img/header_op_r.jpg') no-repeat 50% 0
+	.congratulation
+		margin-top: 130px
+		.congratulation__rigth-block
+			position: relative
+			left: -30px
+	.city
+		opacity: 0
+		font-size: 0
+	.link-club
+		opacity: 0
+		a
+			font-size: 0
+	.phone
+		a
+			color: $white
+.header__all-r
+	.city
+		opacity: 0
+		font-size: 0
+	.link-club
+		opacity: 0
+		a
+			font-size: 0
+.header__home-two
+	width: 100%
+	height: 1000px
+	background: url('../img/header_home_bg_two.jpg') no-repeat 50% 0
+	.link-club
+		a
+			color: $white
+	.phone
+		a
+			color: $white
+			&:nth-child(2)
+				color: $tree_poppy
+				font-size: 26px
+				text-transform: uppercase
+				letter-spacing: 1px
+	.recording
+		background: transparent
+		margin-top: 100px
+		.container
+			padding: 0
+		p
+			color: $white
+			font-size: 60px
+			span
+				color: $white
+		form
+			background: rgba(204, 204, 204, 0.5)
+			width: 440px
+			padding: 47px !important
+			border-radius: 10px
+			box-sizing: border-box
+			margin-top: 70px
+			p
+				font-size: 16px
+				color: $midnight_express
+			button
+				background: $tree_poppy
+.header__home-tree
+	height: 850px
+	background: url('../img/header_home_bg_two.jpg') no-repeat 50% 0/cover
+.congratulation
+	@include row-between
+	margin-top: 190px
+	.congratulation__left-block
+		h1
+			color: $tree_poppy
+			font-size: 48px
+		p
+			color: $white
+			font-size: 30px
+			font-family: $FuturaFuturisLightC
+	.congratulation__rigth-block
+		width: 281px
+		text-align: center
+		span
+			color: $white
+			font-size: 36px
+			font-family: $FuturaFuturisC
+			margin-top: 20px
+			display: block
+.header__all
+	.city
+		color: #000
+		text-shadow: none
+	.phone
+		a
+			color: #000000
+			&:nth-child(2)
+				color: $tree_poppy
+				font-size: 26px
+				text-transform: uppercase
+				letter-spacing: 1px
+.header__block-top
+	.container
+		@include row-between
+.header__block-top-left
+	@include row-between
+	height: 127px
+	align-items: center
+.city
+	color: $white
+	font-family: $FuturaFuturisC
+	font-size: 36px
+	text-shadow: 0 0 8px rgba(0, 0, 0, 0.14)
+	margin-left: 37px
+.header__block-top-right
+	@include row-between
+	height: 127px
+	align-items: center
+.logo-mywell
+	@include row-between
+	font-family: $FuturaMediumC
+	font-size: 20px
+	color: $tree_poppy
+	text-transform: uppercase
+	margin-right: 80px
+	letter-spacing: 2px
+.logo-mywell:before
+	content: ''
+	width: 50px
+	height: 28px
+	display: block
+	background: url('../img/my_logo.png') no-repeat 0 0
+	position: relative
+	top: 15px
+	right: 10px
+.phone
+	a
+		font-family: $FuturaMediumC
+		font-size: 30px
+		color: $tree_poppy
+		display: block
+.header__block-bottom
+	@include row-start
+	height: 62px
+	align-items: center
+	flex-wrap: nowrap
+.link-club
+	min-width: 145px
+	a
+		font-family: $FuturaFuturisC
+		font-size: 20px
+		color: $tree_poppy
+		text-transform: uppercase
+		letter-spacing: 1px
+		white-space: nowrap
+		position: relative
+		left: 24px
+.menu
+	background-color: $boston_blue
+	border-radius: 10px
+	margin-left: 66px
+	overflow: hidden
+	min-width: 2000px
+	ul
+		@include row-start
+		height: 62px
+		align-items: center
+		li
+			list-style: none
+			display: flex
+			align-items: center
+			height: 100%
+			a
+				font-family: $FuturaFuturisC
+				font-size: 20px
+				color: $white
+				text-transform: uppercase
+				display: flex
+				height: 100%
+				align-items: center
+				padding: 0 42px
+				transition: background-color .3s ease-in-out
+				letter-spacing: 2px
+			a.active
+				background-color: $tree_poppy
+.promo
+	width: 782px
+	position: relative
+	left: 230px
+	top: 80px
+	.promo__block-img
+		width: 281px
+		position: relative
+		left: 260px
+		top: 50px
+		img
+			width: 281px
+			position: relative
+	.promo__block-nav
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		a
+			font-family: $FuturaMediumC
+			font-size: 30px
+			color: $white
+			position: absolute
+			text-shadow: 0 0 8px rgba(0,0,0,.14)
+			border-bottom: 1px solid $tree_poppy
+			width: 140px
+			transition: color .3s ease-in-out
+			&:hover
+				color: $tree_poppy
+			span
+				display: block
+				position: absolute
+				right: -60px
+				bottom: 0
+				left: -60px
+				white-space: nowrap
+				text-align: center
+				width: 200px
+				margin: auto
+			&:before
+				content: ""
+				display: block
+				width: 12px
+				height: 12px
+				border-radius: 50%
+				background: $tree_poppy
+				position: absolute
+			&:after
+				content: ""
+				display: block
+				color: #f07e33;
+				border-bottom: 1px solid
+				width: 30px
+				position: absolute
+				backface-visibility: hidden
+			&:nth-child(1)
+				right: 68%
+				top: 25px
+				&:before
+					bottom: -30px
+					left: 100%
+					margin-left: 17px
+				&:after
+					transform: rotate(45deg)
+					transform-origin: top left
+					top: 100%
+					left: 100%
+
+			&:nth-child(2)
+				right: 75%
+				top: 190px
+				&:before
+					bottom: -30px
+					left: 100%
+					margin-left: 17px
+				&:after
+					transform: rotate(45deg)
+					transform-origin: top left
+					top: 100%
+					left: 100%
+			&:nth-child(3)
+				top: 370px
+				right: 68%
+				&:before
+					bottom: 8px
+					left: 100%
+					margin-left: 19px
+				&:after
+					transform: rotate(-30deg)
+					transform-origin: top left
+					bottom: -1px
+					left: 100%
+			&:nth-child(4)
+				left: 72%
+				top: 25px
+				&:before
+					bottom: -30px
+					right: 100%
+					margin-right: 17px
+				&:after
+					transform: rotate(-45deg)
+					transform-origin: top right
+					top: 100%
+					right: 100%
+			&:nth-child(5)
+				left: 81%
+				top: 190px
+				&:before
+					bottom: -30px
+					right: 100%
+					margin-right: 17px
+				&:after
+					transform: rotate(-45deg)
+					transform-origin: top right
+					top: 100%
+					right: 100%
+			&:nth-child(6)
+				left: 72%
+				top: 370px
+				&:before
+					bottom: 8px
+					right: 100%
+					margin-right: 19px
+				&:after
+					transform: rotate(30deg)
+					transform-origin: top right
+					bottom: -1px
+					right: 100%
+.menu
+	.menu-two
+		li
+			a
+				padding: 0 60px
+.promo__block-text
+	p
+		font-family: $FuturaFuturisC
+		font-size: 60px
+		color: $white
+		text-shadow: 0 4px 16px rgba(0,0,0,.30)
+		text-align: center
+		position: relative
+		top: 56px
+		span
+			color: $tree_poppy
+			position: relative
+			top: 10px
+			b
+				font-family: $ALSRubl
+				font-weight: normal
+	a
+		width: 340px
+		height: 72px
+		@include row-center
+		align-items: center
+		background-color: $tree_poppy
+		border-radius: 4px
+		margin: 0 auto
+		position: relative
+		top: 33px
+		box-shadow: 0px 2px 8px #000
+		text-transform: uppercase
+		color: #fff
+		font-family: $FuturaMediumC
+		font-size: 24px
+		cursor: pointer
+		transition: background-color .3s ease-in-out
+		&:hover
+			background-color: $tree_poppy
+.header__home-five
+	background: url('../img/header_home_bg_five.jpg') no-repeat 50% 0
+	.city
+		opacity: 0
+		font-size: 0
+	.link-club
+		opacity: 0
+		font-size: 0
+	.promo
+		left: 450px
+		top: 180px
+		.promo__block-text
+			position: absolute
+			left: -450px
+			top: -40px
+			width: 315px
+			p
+				top: 0
+				margin: 0
+				span
+					display: block
+					top: 0
+					margin: 40px 0
+			a
+				top: 0
+@media only screen and (min-width: 991px)
+	.menu
+		.logo-mywell
+			display: none!important
+@media only screen and (min-width: $lg) and (max-width: 1279px)
+	.header__home-opl
+		background: url('../img/header_op_r.jpg') no-repeat 0 0
+		.congratulation
+			margin-top: 120px
+			.congratulation__left-block
+				text-align: center
+				width: 100%
+				h1
+					font-size: 24px
+				p
+					font-size: 24px
+			.congratulation__rigth-block
+				width: 100%
+				display: flex
+				justify-content: center
+				flex-direction: column
+				align-items: center
+				img
+					height: 160px
+	.header__home-two
+		.recording
+			p
+				font-size: 40px
+	.menu
+		ul
+			li
+				a
+					font-size: 18px
+					padding: 0 20px
+	.map
+		img
+			width: 960px!important
+			max-width: 960px!important
+	.header__home-four
+		.promo__block-text
+			p
+				margin: 0
+				top: 0
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five.jpg) no-repeat 70% 0
+		.promo
+			top: 160px
+			left: 0
+			width: 100%
+			.promo__block-text
+				top: 100px
+				left: 0
+				width: 100%
+				position: relative
+				p
+					span
+						margin: 20px 0
+			.promo__block-img
+				left: 390px
+	.menu
+		.menu-two
+			li
+				a
+					padding: 0 30px
+@media only screen and (max-width: 991px)
+	.header__home-four
+		.promo
+			.promo__block-text
+				position: absolute
+				top: 0
+				p
+					top: 0
+					margin: 0
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five.jpg) no-repeat 70% 60%
+		height: 569px!important
+		.phone
+			a:nth-child(2)
+				font-size: 15px !important
+		.promo
+			left: 0
+			top: 0
+			width: 100%
+			.promo__block-text
+				left: 0
+				top: 10px
+				width: 100%
+				@include row-center
+				flex-direction: column
+				align-items: center
+				p
+					font-size: 36px
+					text-align: left
+					max-width: 200px
+					span
+						margin: 0
+				a
+					font-size: 15px
+					width: 240px
+					height: 50px
+					line-height: 57px
+					display: block
+					text-align: center
+					position: relative
+					top: 240px
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5)
+			.promo__block-img
+				width: 153px
+				left: 0
+				margin: 0 auto
+				top: 210px
+				position: relative
+				img
+					width: 153px
+			.promo__block-nav
+				display: none
+			.promo__block-nav-mob
+				display: block
+				position: relative
+				z-index: 1000
+				a
+					font-family: $FuturaMediumC
+					font-size: 18px
+					color: $white
+					position: absolute
+					text-shadow: 0 0 8px rgba(0,0,0,.14)
+					border-bottom: 1px solid $tree_poppy
+					width: 100px
+					transition: color .3s ease-in-out
+					&:hover
+						color: $tree_poppy
+					span
+						display: block
+						position: absolute
+						right: -60px
+						bottom: 0
+						left: -60px
+						white-space: nowrap
+						text-align: center
+						width: 200px
+						margin: auto
+					&:before
+						content: ""
+						display: block
+						width: 12px
+						height: 12px
+						border-radius: 50%
+						background: $tree_poppy
+						position: absolute
+					&:after
+						content: ""
+						display: block
+						color: #f07e33;
+						border-bottom: 1px solid
+						width: 10px
+						position: absolute
+						backface-visibility: hidden
+					&:nth-child(1)
+						left: 66%
+						top: 20px
+						&:before
+							bottom: -15px
+							right: 100%
+							margin-right: 0
+						&:after
+							transform: rotate(-45deg)
+							transform-origin: top right
+							top: 100%
+							right: 100%
+
+@media only screen and (min-width: $md) and (max-width: 991px)
+	.header__home-opl
+		background: url('../img/header_op_r.jpg') no-repeat 0 bottom
+		.congratulation
+			margin-top: 50px
+			.congratulation__rigth-block
+				left: 0
+			.congratulation__left-block
+				width: 100%
+				left: 0
+	.congratulation
+		margin-top: 0
+		.congratulation__left-block
+			text-align: center
+			h1
+				font-size: 24px
+			p
+				font-size: 24px
+		.congratulation__rigth-block
+			width: 100%
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+			img
+				height: 160px
+	.header_home
+		height: 600px!important
+		.header__mob,.menu__open
+			position: absolute
+	.header
+		overflow: visible
+		form
+			max-width: 400px
+	.header__all
+		.header__mob
+			.phone
+				a
+					color: $white
+					&:nth-child(2)
+						color: $tree_poppy
+	.menu__open
+		position: absolute
+	.header__mob
+		background-color: $midnight_express
+		position: absolute
+		width: 100%
+		z-index: 2000
+	.header__home-two
+		.recording
+			margin-top: 0
+			p
+				font-size: 36px
+				text-align: center
+				margin: 25px 0
+				max-width: 300px
+			.container
+				padding: 0 15px
+				form
+					width: 100%
+					padding: 0 !important
+					background: transparent
+					margin-top: 0
+					p
+						margin: 0 0 0 30px
+						color: #fff
+						text-align: left
+						max-width: inherit
+						a
+							color: #fff
+							border-bottom: 1px solid #fff
+						br
+							display: none
+					.checkbox input + .checkbox__text:before
+						background: transparent
+						border: 1px solid #fff
+						box-sizing: border-box
+					.checkbox input:checked + .checkbox__text:before
+						background: transparent
+						border: 1px solid #fff
+						box-sizing: border-box
+	.header__block-top
+		.container
+			align-items: center
+	.header__block-top-right,.header__block-top-left
+		height: inherit
+		padding: 12px 0
+	.header__block-bottom
+		height: inherit
+	.logo
+		img
+			display: none
+			&.logo__mob
+				display: block
+				width: 39px
+				height: 35px
+	.city,.logo-mywell,.link-club,.menu,.slider
+		display: none
+	.phone
+		a
+			font-size: 15px
+			margin: 5px 0
+			&:nth-child(2)
+				font-size: 13px!important
+	.menu__mob
+		display: block
+		width: 23px
+		height: 21px
+		background: url('../img/menu-mob.png') no-repeat 0 0
+		text-indent: -9999px
+	.header__mob
+		.menu__mob
+			background: url('../img/menu-close.png') no-repeat 0 0
+			height: 23px
+	.menu__open
+		display: flex
+		flex-direction: column
+		left: 0
+		top: 59px
+		background-color: $midnight_express
+		height: inherit
+		min-width: inherit
+		margin: 0
+		width: 100%
+		border-top-left-radius: 0
+		border-bottom-left-radius: 20px
+		border-top-right-radius: 0
+		border-bottom-right-radius: 20px
+		z-index: 2000
+		ul
+			display: flex
+			flex-direction: column
+			height: inherit
+			li
+				width: 100%
+				margin-bottom: 20px
+				a
+					width: 100%
+					height: 43px
+					line-height: 47px
+					display: block
+					padding: 0 !important
+					text-align: center
+		.logo-mywell
+			display: flex
+			justify-content: center
+			margin: 15px 0
+
+@media only screen and (max-width: $xs)
+	h1.fluide
+		padding-left: 15px
+	.header__home-opl
+		background: url('../img/header_op_r.jpg') no-repeat 0 bottom
+		.congratulation
+			margin-top: 0
+			.congratulation__rigth-block
+				left: 0
+			.congratulation__left-block
+				width: 100%
+				left: 0
+	.congratulation
+		margin-top: 0
+		.congratulation__left-block
+			text-align: center
+			h1
+				font-size: 24px
+			p
+				font-size: 24px
+		.congratulation__rigth-block
+			width: 100%
+			display: flex
+			justify-content: center
+			flex-direction: column
+			align-items: center
+			img
+				height: 160px
+	.header_home
+		height: 600px!important
+		background-size: cover
+		.phone a:nth-child(2)
+			font-size: 15px!important
+	.header__mob
+		background-color: $midnight_express
+		position: absolute
+		width: 100%
+		z-index: 2000
+		top: 0
+		left: 0
+	.header__all
+		.header__mob
+			.phone
+				a
+					color: $white
+					&:nth-child(2)
+						color: $tree_poppy
+	.header__home-two
+		.recording
+			margin-top: 0
+			p
+				font-size: 36px
+				text-align: center
+				margin: 25px 0
+			.container
+				padding: 0 15px
+				form
+					width: 100%
+					padding: 0 !important
+					background: transparent
+					margin-top: 0
+					p
+						margin: 0 0 0 30px
+						color: #fff
+						text-align: left
+						a
+							color: #fff
+							border-bottom: 1px solid #fff
+						br
+							display: none
+					.checkbox input + .checkbox__text:before
+						background: transparent
+						border: 1px solid #fff
+						box-sizing: border-box
+					.checkbox input:checked + .checkbox__text:before
+						background: transparent
+						border: 1px solid #fff
+						box-sizing: border-box
+	.header__block-top
+		.container
+			align-items: center
+	.header__block-top-right,.header__block-top-left
+		height: inherit
+		padding: 12px 0
+	.header__block-bottom
+		height: inherit
+	.logo
+		img
+			display: none
+			&.logo__mob
+				display: block
+				width: 39px
+				height: 35px
+	.city,.logo-mywell,.link-club,.menu,.slider
+		display: none
+	.phone
+		a
+			font-size: 15px
+			margin: 5px 0
+			&:nth-child(2)
+				font-size: 13px!important
+	.menu__mob
+		display: block
+		width: 23px
+		height: 21px
+		background: url('../img/menu-mob.png') no-repeat 0 0
+		text-indent: -9999px
+	.header__mob
+		.menu__mob
+			background: url('../img/menu-close.png') no-repeat 0 0
+			height: 23px
+	.menu__open
+		display: flex
+		flex-direction: column
+		position: absolute
+		left: 0
+		top: 59px
+		background-color: $midnight_express
+		height: inherit
+		min-height: 300px
+		min-width: inherit
+		margin: 0
+		width: 100%
+		border-top-left-radius: 0
+		border-bottom-left-radius: 20px
+		border-top-right-radius: 0
+		border-bottom-right-radius: 20px
+		z-index: 2000
+		ul
+			display: flex
+			flex-direction: column
+			height: inherit
+			li
+				width: 100%
+				margin-bottom: 20px
+				min-height: 43px
+				a
+					min-height: 43px
+					box-sizing: border-box
+					width: 100%
+					height: 43px
+					line-height: 47px
+					display: block
+					padding: 0 !important
+					text-align: center
+		.logo-mywell
+			display: flex
+			justify-content: center
+			margin: 15px 0
+	.header__home-four
+		.promo
+			.promo__block-text
+				position: absolute
+				top: 0
+				p
+					top: 0
+					margin: 0
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five_mob.jpg) no-repeat 0 0
+		height: 569px!important
+		.phone
+			a:nth-child(2)
+				font-size: 15px !important
+		.promo
+			left: 0
+			top: 0
+			width: 100%
+			.promo__block-text
+				left: 0
+				top: 10px
+				width: 100%
+				@include row-center
+				flex-direction: column
+				align-items: center
+				p
+					font-size: 36px
+					text-align: left
+					max-width: 200px
+					span
+						margin: 0
+				a
+					font-size: 15px
+					width: 240px
+					height: 50px
+					position: relative
+					top: 240px
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5)
+					line-height: 54px
+					display: block
+					text-align: center
+			.promo__block-img
+				width: 153px
+				left: 0
+				margin: 0 auto
+				top: 210px
+				position: relative
+				img
+					width: 153px
+			.promo__block-nav
+				display: none
+			.promo__block-nav-mob
+				display: block
+				position: relative
+				z-index: 1000
+				a
+					font-family: $FuturaMediumC
+					font-size: 18px
+					color: $white
+					position: absolute
+					text-shadow: 0 0 8px rgba(0,0,0,.14)
+					border-bottom: 1px solid $tree_poppy
+					width: 100px
+					transition: color .3s ease-in-out
+					&:hover
+						color: $tree_poppy
+					span
+						display: block
+						position: absolute
+						right: -60px
+						bottom: 0
+						left: -60px
+						white-space: nowrap
+						text-align: center
+						width: 200px
+						margin: auto
+					&:before
+						content: ""
+						display: block
+						width: 12px
+						height: 12px
+						border-radius: 50%
+						background: $tree_poppy
+						position: absolute
+					&:after
+						content: ""
+						display: block
+						color: #f07e33;
+						border-bottom: 1px solid
+						width: 10px
+						position: absolute
+						backface-visibility: hidden
+					&:nth-child(1)
+						left: 66%
+						top: 20px
+						&:before
+							bottom: -15px
+							right: 100%
+							margin-right: 0
+						&:after
+							transform: rotate(-45deg)
+							transform-origin: top right
+							top: 100%
+							right: 100%
+@media only screen and (min-width: 321px) and (max-width: 360px)
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five_mob.jpg) no-repeat 0 -60px / cover
+@media only screen and (min-width: 361px) and (max-width: 375px)
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five_mob.jpg) no-repeat 0 -80px / cover
+@media only screen and (min-width: 401px) and (max-width: 479px)
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five_mob.jpg) no-repeat 0 -130px / cover
+@media only screen and (min-width: 576px) and (max-width: 767px)
+	.header__home-five,.header__home-four
+		background: url(../img/header_home_bg_five_mob.jpg) no-repeat 0 -380px / cover
+@media only screen and (min-width: $sm) and (max-width: 767px)
+	.header
+		overflow: visible
+		form
+			max-width: 400px
+	.header_home
+		height: 560px !important
+	.header__mob,.menu__open
+		position: absolute
+	.key-content-left
+		justify-content: center!important
+		img
+			margin-right: 30px
+	.key-content-right
+		justify-content: center
+		width: 100%
+		display: flex
+		form
+			max-width: 400px

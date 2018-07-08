@@ -1,0 +1,35 @@
+.header.header_home.header__home-two
+	.header__block
+		.header__block-top
+			.container
+				.header__block-top-left
+					.logo
+						img(src='static/img/logo.png')
+						img(class="logo__mob" src='static/img/logo-mob.png')
+					.city
+						p Бутово
+				.header__block-top-right
+					.logo-mywell
+						p MyWellness
+					.phone
+						a(href="tel:8 (495) 646-10-05") 8 (495) 646-10-05
+						a(href="#") Заказать звонок
+				a(class="menu__mob" href="#") Меню
+		.container.header__block-bottom
+			.link-club
+				a(href="#") Выбрать клуб
+			.menu
+				include ../modules/menu
+	.recording
+		.container
+			p Хочу прийти нa <span>бесплатное</span> пробное занятие
+			form
+				input(placeholder="ИМЯ" type="text")
+				input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+				button(class="btn" type="submit") Записаться
+				.form__group
+					label.checkbox
+						input(checked type="checkbox")
+						.checkbox__text
+					p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>
+

@@ -1,0 +1,91 @@
+extends ../layout/main-home
+
+block content
+	.recording
+		.container
+			p Хочу прийти нa <span>бесплатное</span> пробное занятие
+			form
+				input(placeholder="ИМЯ" type="text")
+				input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+				button(class="btn btn__midnight_express" type="submit") Записаться
+				.form__group
+					label.checkbox
+						input(checked type="checkbox")
+						.checkbox__text
+					p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>
+	.slider__block
+		.slider
+			.slider__item
+				img(src='static/img/slide1.jpg')
+				.slider__item-description
+					.container
+						p Такого еще никогда не было:<br> <span>Больше,</span> чем фитнес<br> <span>Ярче,</span> чем мечта
+						p.big-text 2500 <span>M</span> <sup>2</sup>
+						p.small-text современных фитнес-технологий
+			.slider__item
+				img(src='static/img/slide5.jpg')
+				.slider__item-description
+					.container
+						p Такого еще никогда не было:<br> <span>Больше,</span> чем фитнес<br> <span>Ярче,</span> чем мечта
+						p.big-text > 200
+						p.small-text инновационных тренажёров 
+							img(class="tech2" src='static/img/tech2.png')
+			.slider__item
+				img(src='static/img/slide2.jpg')
+				.slider__item-description
+					.container
+						p Такого еще никогда не было:<br> <span>Больше,</span> чем фитнес<br> <span>Ярче,</span> чем мечта
+						p.big-text 600
+						p.small-text шкафов с антивандальной системой доступа онлайн
+			.slider__item
+				img(src='static/img/slide3.jpg')
+				.slider__item-description
+					.container
+						p Такого еще никогда не было:<br> <span>Больше,</span> чем фитнес<br> <span>Ярче,</span> чем мечта
+						p.big-text 200 <span>M</span> <sup>2</sup>
+						p.small-text роскошной SPA-зоны с гидромассажем
+			.slider__item
+				img(src='static/img/slide4.jpg')
+				.slider__item-description
+					.container
+						p Такого еще никогда не было:<br> <span>Больше,</span> чем фитнес<br> <span>Ярче,</span> чем мечта
+						p.big-text-last c <span>6</span> утра и до полуночи
+						p.small-text мы работаем для ваc каждый день
+		.container
+			.photo__text
+				.photo__text-block
+						img(src='static/img/photo4.jpg')
+						p.sup <span><b>2500</b> M<sup>2</sup></span><br>современных<br>фитнес-технологий
+				.photo__text-block
+					img(src='static/img/photo2.jpg')
+					p <span><b>> 200</b></span><br>инновационных<br>тренажёров
+						img(class="tech" src='static/img/tech.png')
+				.photo__text-block
+					img(src='static/img/photo3.jpg')
+					p <span><b>600</b></span><br>шкафов с антивандальной<br>системой доступа онлайн
+				.photo__text-block
+					img(src='static/img/photo4.jpg')
+					p.sup <span><b>200</b> M<sup>2</sup></span><br>роскошной SPA-зоны<br>с гидромассажем
+				.photo__text-block
+					img(src='static/img/photo1.jpg')
+					p <span>с <b>6</b> утра<br> и до полуночи</span><br>мы работаем для ваc<br>каждый день
+	include ../modules/map
+	.map__after
+		img(src='static/img/bus.png')
+		p Каждые 20 минут БЕСПЛАТНЫЕ<br> <span>шатлы от метро Бульвар Дмитрия Донского до ТЦ ВиВа</span>
+	.main__block-key
+		.main__block-key-content
+			.container
+				.key-content-left
+					img(src='static/img/key.png')
+					p Твой ключ<br>в цифровой<br>фитнес<br><span class="old">3000 <b>&#8381;</b></span><span>1500 <b>&#8381;</b></span>
+				.key-content-right
+					form
+						input(placeholder="ИМЯ" type="text")
+						input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+						button(class="btn btn__midnight_express" type="submit") Получить ключ
+						.form__group
+							label.checkbox
+								input(checked type="checkbox")
+								.checkbox__text
+							p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>

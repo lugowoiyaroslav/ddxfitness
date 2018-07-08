@@ -1,0 +1,504 @@
+.popup-links
+	margin: 100px 0
+	li
+		list-style: none
+		a
+			color: $midnight_express
+			font-family: $FuturaMediumC
+			font-size: 36px
+
+#appointment
+	overflow-y: hidden
+	align-items: center
+	.popup
+		background: #ededed
+		width: 420px
+		padding: 37px
+		border-radius: 10px
+		margin: 0
+		.close-popup
+			top: 20px
+			right: 16px
+.popup
+	min-width: 300px
+	min-height: 300px
+	box-shadow: 0 6px 18px rgba(0, 0, 0, .30)
+	background-color: $white
+	box-sizing: border-box
+	z-index: 900
+	position: relative
+	margin: 50px 0
+	.title-form
+		color: $midnight_express
+		font-family: $FuturaMediumC
+		font-size: 36px
+		margin: 0 0 37px
+		display: block
+		text-align: center
+	.close-popup
+		width: 21px
+		height: 21px
+		background: url(../img/close-popup.png) no-repeat 0 0
+		text-indent: -9999px
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+	form
+		input
+			width: 100%
+			height: 72px
+			background-color: $white
+			border-radius: 4px
+			border: 1px solid transparent
+			margin-bottom: 10px
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.05)
+			text-align: center
+			color: #010101
+			font-family: $FuturaFuturisLightC
+			font-size: 24px
+			box-sizing: border-box
+			transition: border .2s ease-in-out
+			&:focus
+				text-align: left
+				padding: 0 17px
+				border: 1px solid $tree_poppy
+			&[type=checkbox]
+				width: 17px
+				height: 19px
+		p
+			color: $midnight_express
+			font-family: $FuturaFuturisLightC
+			font-size: 16px
+			margin: 0
+			a
+				color: $midnight_express
+				font-family: $FuturaFuturisLightC
+				font-size: 16px
+				border-bottom: 1px solid rgba(25, 30, 59, 0.45)
+.popup form input::-webkit-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.popup form input:focus::-webkit-input-placeholder
+	color: transparent
+.popup form input::-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.popup form input:focus::-moz-placeholder
+	color: transparent
+.popup form input:-ms-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.popup form input:focus:-ms-input-placeholder
+	color: transparent
+.popup form input:-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.popup form input:focus:-moz-placeholder
+	color: transparent
+.all-popup
+	width: 654px
+	border-radius: 10px
+	padding: 54px
+	box-sizing: border-box
+	background: #fff
+	box-shadow: 0 6px 18px rgba(0, 0, 0, .30)
+	.close-popup
+		top: 20px
+		right: 16px
+	.all__popup-title
+		color: $boston_blue
+		font-family: $FuturaFuturisLightC
+		font-size: 36px
+		margin: 0 0 38px
+		span
+			font-family: $FuturaMediumC
+			border-bottom: 2px solid $boston_blue
+	ul
+		margin-bottom: 38px
+		li
+			list-style: none
+			color: $midnight_express
+			font-family: $FuturaFuturisLightC
+			font-size: 30px
+			margin-bottom: 10px
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			&:before
+				content: ''
+				width: 12px
+				min-width: 12px
+				height: 12px
+				background: url(../img/li-bg.png) no-repeat 0 0
+				position: relative
+				margin-right: 10px
+	img
+		max-width: 100%
+	.schedule-title
+		color: $boston_blue
+		font-family: $FuturaMediumC
+		font-size: 36px
+		margin: 0 0 30px
+		display: block
+		text-align: center
+	.schedule-block
+		@include row-between
+		margin-bottom: 20px
+		.schedule-block-left
+			width: 225px
+			.schedule-location
+				color: #636363
+				font-family: $FuturaFuturisC
+				font-size: 14px
+				text-transform: uppercase
+			.schedule-date-time
+				color: $midnight_express
+				font-family: $FuturaFuturisLightC
+				font-size: 30px
+				span
+					color: $tree_poppy
+			.schedule-trener
+				color: $midnight_express
+				font-family: $FuturaMediumC
+				font-size: 24px
+				span
+					color: #636363
+					font-family: $FuturaFuturisC
+					font-size: 14px
+					text-transform: uppercase
+			a
+				font-family: 'FuturaMediumC', sans-serif
+				font-size: 24px
+				width: 100%
+				height: 70px
+				text-align: center
+				text-transform: uppercase
+				color: #fff
+				display: flex
+				align-items: center
+				border-radius: 4px
+				justify-content: center
+				background-color: $tree_poppy
+				box-shadow: 0 2px 8px rgba(131, 79, 38, .4)
+		.schedule-block-right
+			width: 275px
+			p
+				color: $midnight_express
+				font-family: $FuturaFuturisLightC
+				font-size: 18px
+.trener-popup
+	border-radius: 10px
+	overflow: hidden
+	width: 384px
+	background-color: $white
+	.close-popup
+		background: url(../img/close-popup-w.png) no-repeat 0 0
+		top: 20px
+		right: 16px
+	.popup-trener-description
+		padding: 28px
+		color: $midnight_express
+		font-family: $FuturaFuturisLightC
+		font-size: 22px
+		b
+			color: $midnight_express
+			font-family: $FuturaMediumC
+			font-size: 28px
+			display: block
+			font-weight: normal
+		.trener-name
+			color: $midnight_express
+			font-family: $FuturaFuturisC
+			font-size: 30px
+			span
+				color: #636363
+				font-family: $FuturaFuturisC
+				font-size: 16px
+				text-transform: uppercase
+		p
+			margin: 0 0 30px
+			&:last-child
+				margin: 0 0 10px
+.popup-overlay
+	position: fixed
+	width: 100%
+	height: 100%
+	background: rgba(25, 30, 59, 0.8);
+	z-index: 2000
+	top: 0
+	left: 0
+	display: none
+	justify-content: center
+	align-items: flex-start
+	overflow-y: scroll
+#payment
+	.popup
+		width: auto
+		form
+			@include row-between
+.payment__left
+	width: 490px
+	margin-right: 90px
+	.payment__left-tarif-block
+		@include row-between
+		p
+			color: $midnight_express
+			font-family: $FuturaFuturisC
+			font-size: 28px
+			position: relative
+			&.payment__left-tarif-name
+				&:after
+					content: ''
+					display: inline-block
+					width: 160px
+					height: 4px
+					background: url('../img/dot.png') repeat-x 0 0
+			&.payment__left-tarif-price
+				font-size: 33px
+				position: relative
+				top: -4px
+			b
+				font-family: 'ALSRubl', sans-serif
+				font-size: 33px
+				font-weight: normal
+		&.braslet-block
+			p
+				&.payment__left-tarif-name
+				&:after
+					content: ''
+					width: 280px
+	h5
+		color: $midnight_express
+		font-family: $FuturaFuturisC
+		font-size: 45px
+		margin: 0 0 43px
+.payment__right
+	width: 350px
+.popup
+	form
+		.payment__right
+			input
+				border: 1px solid $midnight_express
+				&:focus
+					border: 1px solid $tree_poppy
+.all-popup
+	form
+		.radio
+			position: absolute
+			z-index: -1
+			opacity: 0
+			margin: 10px 0 0 7px
+		.radio + label
+			position: relative
+			padding: 0 0 0 65px
+			height: 56px
+			min-height: 56px
+			cursor: pointer
+			display: flex
+			align-items: center
+		.radio + label:before
+			content: ''
+			position: absolute
+			left: 0
+			width: 56px
+			height: 56px
+			box-sizing: border-box
+			border: 5px solid $midnight_express
+			border-radius: 20px
+			background: #FFF
+		.radio + label:after
+			content: ''
+			position: absolute
+			left: 18px
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			background: $midnight_express
+			opacity: 0
+			transition: .2s
+		.radio:checked + label:after
+			opacity: 1
+		button
+			width: 346px
+			height: 72px
+			background-color: $tree_poppy
+			border-radius: 4px
+			border: none
+			margin-top: 0
+			margin-bottom: 0
+			box-shadow: 0px 2px 8px rgba(131, 79, 38, 0.4)
+			text-transform: uppercase
+			text-align: center
+			color: #fff
+			font-family: $FuturaMediumC
+			font-size: 24px
+			cursor: pointer
+			transition: background-color .3s ease-in-out
+			&:hover
+				background-color: $midnight_express
+.block-checkbox
+	display: flex
+	align-items: center
+	height: 56px
+	justify-content: flex-start!important
+	margin: 25px 0 43px
+	p
+		margin-right: 40px!important
+.payment__left-final
+	background: url('../img/final_bg.png') no-repeat 0 0
+	margin-top: 60px
+	padding-top: 30px
+	p
+		font-size: 33px!important
+		font-family: $FuturaFuturisC!important
+		margin-bottom: 52px!important
+		b
+			font-family: 'ALSRubl', sans-serif
+			font-size: 33px
+			font-weight: normal
+
+.scroll
+	overflow-y: hidden
+
+@media only screen and (max-width: $xs)
+	.popup
+		margin: 15px
+	.all-popup
+		padding: 54px 15px
+		form
+			button
+				width: 100%
+		.all__popup-title
+			font-size: 24px
+		ul
+			li
+				font-size: 20px
+				&:before
+					position: relative
+					top: 0
+					display: inline-block
+					width: 8px
+					min-width: 8px
+					height: 8px
+					margin-right: 10px
+					content: ''
+					background: url(../img/li-bg.png) no-repeat 0 0/contain
+	#appointment
+		align-items: flex-start
+		overflow-y: scroll
+		.popup
+			width: 100%
+			max-width: 380px
+			margin: 15px
+			padding: 37px 15px
+			form
+				p
+					margin-left: 30px
+	#payment
+		.popup
+			max-width: 330px
+	.payment__left-final
+		margin-top: 0
+		background: transparent
+	.payment__left
+		width: 100%
+		margin-right: 0
+		.payment__left-tarif-block
+			p
+				color: $midnight_express
+				font-family: $FuturaFuturisC
+				font-size: 24px
+				position: relative
+				&.payment__left-tarif-price
+					font-size: 24px
+					top: 0
+					b
+						font-size: 24px
+				&.payment__left-tarif-name
+					&:after
+						content: ''
+						display: none
+	.block-checkbox
+		justify-content: space-between!important
+		p
+			margin-right: 0!important
+	.payment__right
+		width: 100%
+		p
+			margin-left: 30px!important
+			margin-bottom: 30px!important
+			br
+				display: none
+@media only screen and (min-width: 320px) and (max-width: 1280px)
+	.popup
+		margin: 15px
+	.all-popup
+		.schedule-block
+			.schedule-block-left
+				a
+					line-height: 74px
+					display: block
+					text-align: center
+@media only screen and (min-width: $md) and (max-width: 1279px)
+	.popup
+		margin: 15px
+	.all-popup
+		padding: 54px 15px
+		form
+			button
+				width: 100%
+		.all__popup-title
+			font-size: 24px
+		ul
+			li
+				font-size: 20px
+				&:before
+					position: relative
+					top: 0
+					display: inline-block
+					width: 8px
+					min-width: 8px
+					height: 8px
+					margin-right: 10px
+					content: ''
+					background: url(../img/li-bg.png) no-repeat 0 0/contain
+	#payment
+		.popup
+			max-width: 330px
+	.payment__left-final
+		margin-top: 0
+		background: transparent
+	.payment__left
+		width: 100%
+		margin-right: 0
+		.payment__left-tarif-block
+			p
+				color: $midnight_express
+				font-family: $FuturaFuturisC
+				font-size: 24px
+				position: relative
+				&.payment__left-tarif-price
+					font-size: 24px
+					top: 0
+					b
+						font-size: 24px
+				&.payment__left-tarif-name
+					&:after
+						content: ''
+						display: none
+	.block-checkbox
+		justify-content: space-between!important
+		p
+			margin-right: 0!important
+	.payment__right
+		width: 100%
+		p
+			margin-left: 30px!important
+			margin-bottom: 30px!important
+			br
+				display: none

@@ -1,0 +1,96 @@
+extends ../layout/main
+
+block content
+	.page
+		.subscription
+			include ../modules/breadcrumbs
+			.container-fluide
+				.slider__aboniment-nav
+					a(class="slider__aboniment-nav-prev" href="#") Лево
+					h1 Выбери свой
+					a(class="slider__aboniment-nav-next" href="#") Право
+				.subscription__plan
+					.subscription__plan-block.block__light
+						.plan-block-header
+							img(src='static/img/head1.png')
+						.plan-block-rate
+							h2 Light
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li.disable групповые занятия Less Miless
+								li.disable групповые занятия Cycle
+								li.disable групповые занятия HIIT
+								li.disable сауна
+								li.disable хамам
+								li.disable соляная комната
+							.plan-price <span>1 700 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+					.subscription__plan-block.block__infinity
+						.plan-block-header
+							img(src='static/img/head3.png')
+						.plan-block-rate.main-rate
+							h2 Infinity
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li групповые занятия Less Miless
+								li групповые занятия Cycle
+								li групповые занятия HIIT
+								li сауна
+								li хамам
+								li соляная комната
+								li доступ во все клубы сети
+							.plan-price <span>2 000 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+					.subscription__plan-block.block__smart
+						.plan-block-header
+							img(src='static/img/head2.png')
+						.plan-block-rate
+							h2 Smart
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li групповые занятия Less Miless
+								li групповые занятия Cycle
+								li групповые занятия HIIT
+								li.disable сауна
+								li.disable хамам
+								li.disable соляная комната
+							.plan-price <span>2 000 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+		.subscription__description
+			.container
+				.subscription__description-slider
+					a(class="slider__br-nav-prev" href="#") Лево
+					.subscription__description-img
+						img(src='static/img/brs1.png')
+						img(src='static/img/brs2.png')
+						img(src='static/img/brs3.png')
+					a(class="slider__br-nav-next" href="#") Право
+				.subscription__description-text
+					p Браслет покупается отдельно, один раз. Цвет зависит от выбора абонемента.<br><span>3 000 <b>&#8381;</b></span>
+	.recording
+		.container
+			p Мне нужно больше информации
+			form
+				input(placeholder="ИМЯ" type="text")
+				input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+				button(class="btn btn__midnight_express" type="submit") Узнать
+				.form__group
+					label.checkbox
+						input(checked type="checkbox")
+						.checkbox__text
+					p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>

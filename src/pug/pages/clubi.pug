@@ -1,0 +1,24 @@
+extends ../layout/main-r
+
+block content
+	include ../modules/breadcrumbs
+	.container
+		h1 Клубы
+		.club__choice
+			.club__choice-block
+				.club__choice-block-img
+					.club__choice-block-img-wrap
+						img(src='static/img/club1.jpg')
+						p DDX Бутово
+					.club__choice-address-block
+						h5 Адрес
+						p г. Москва, район Северное Бутово,<br> ул. Поляны д.8, ТЦ ВиВа
+						a(href="#") Выбрать этот клуб
+			.club__choice-block
+				.club__choice-block-img
+					.club__choice-block-img-wrap
+						img(src='static/img/club2.jpg')
+						p DDX Зеленоград
+					.club__choice-address-block
+						p.soon Скоро открытие
+						a(href="#") Выбрать этот клуб

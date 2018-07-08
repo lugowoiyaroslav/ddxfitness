@@ -1,0 +1,347 @@
+extends ../layout/main
+
+block content
+	include ../modules/breadcrumbs
+	.container
+		.page
+			h1 Расписание
+			.schedule__nav.schedule__nav-mob
+				ul
+					li
+						a(href="#") Направления
+						ul.dropdown
+							li
+								a(href="#") Все тренеры
+							li
+								a(href="#") Силуянова Ксения
+							li
+								a(href="#") Соколова Екатерина
+							li
+								a(href="#") Иванов Константин
+					li
+						a(href="#") Зоны
+						ul.dropdown
+							li
+								a(href="#") Все тренеры
+							li
+								a(href="#") Силуянова Ксения
+							li
+								a(href="#") Соколова Екатерина
+							li
+								a(href="#") Иванов Константин
+					li
+						a(href="#") Тренировки
+						ul.dropdown
+							li
+								a(href="#") Все тренеры
+							li
+								a(href="#") Силуянова Ксения
+							li
+								a(href="#") Соколова Екатерина
+							li
+								a(href="#") Иванов Константин
+					li
+						a(href="#") Тренеры
+						ul.dropdown
+							li
+								a(href="#") Все тренеры
+							li
+								a(href="#") Силуянова Ксения
+							li
+								a(href="#") Соколова Екатерина
+							li
+								a(href="#") Иванов Константин
+				a(class="next-week" href="#") Следующая неделя
+			.schedule__month-nav
+				.schedule__month-nav-header
+					a(class="prev-weeks" href="#") Назад
+					a(class="next-weeks" href="#") вперёд
+				.schedule__month-nav-wrap
+					p 5.03.18 – 11.03.18
+			.schedule__week-nav
+				a(class="active" href="#") Пн
+				a(href="#") Вт
+				a(href="#") Ср
+				a(href="#") Чт
+				a(href="#") Пт
+				a(href="#") Сб
+				a(href="#") Вс
+			.schedule__week.schedule__week-mob2
+				.schedule__days.schedule__time
+					.schedule__days-time.schedule__date
+					.schedule__days-time.schedule__days-time-mob2
+						span 9:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 10:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 11:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 12:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 13:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 14:00
+					.schedule__days-time.schedule__days-time-mob2
+						span 23:00
+				.schedule__days.tooday
+					.schedule__days-block.schedule__date
+						span 25.12, пн
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 9:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Moneyhony Fit
+								li Силуянова Ксения
+								li Большой зал
+						span.currency &#8381;
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 13:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 23:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 26.12, ВТ
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fit Ball
+								li Силуянова Ксения
+								li Большой зал
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 27.12, ср
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 28.12, чт
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 9:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(src='static/img/checkmark.png')
+						ul
+								li
+									a(href="#") Fit Ball
+								li Силуянова Ксения
+								li Большой зал
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 29.12, пт
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fit Ball
+								li Силуянова Ксения
+								li Большой зал
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 30.12, сб
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Moneyhony Fit
+								li Силуянова Ксения
+								li Большой зал
+						span.currency &#8381;
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 11:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fitness Yoga
+								li Соколова Екатерина
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+				.schedule__days
+					.schedule__days-block.schedule__date
+						span 31.12, вс
+					.schedule__days-block
+					.schedule__days-time.schedule__days-time-mob2.active__time
+						span 10:00
+					.schedule__days-block.active__day
+						.add__calendar
+							a(class="open__link" href="#")
+								img(class="add" src='static/img/add.png')
+								img(class="add__mob" src='static/img/add_mob.png')
+							a(class="opened__link-add-calendar" href="#") Добавить в свой календарь
+						ul
+								li
+									a(href="#") Fit Ball
+								li Силуянова Ксения
+								li Большой зал
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block
+					.schedule__days-block

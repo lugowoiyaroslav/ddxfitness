@@ -1,0 +1,88 @@
+extends ../layout/main-home-r1
+
+block content
+	.page
+		.subscription.subscription-two
+			.container-fluide
+				.slider__aboniment-nav
+					a(class="slider__aboniment-nav-prev" href="#") Лево
+					h1 Выбери свой
+					a(class="slider__aboniment-nav-next" href="#") Право
+				.subscription__plan
+					.subscription__plan-block.block__light
+						.plan-block-header
+							img(src='static/img/head1.png')
+						.plan-block-rate
+							h2 Light
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li.disable групповые занятия Less Miless
+								li.disable групповые занятия Cycle
+								li.disable групповые занятия HIIT
+								li.disable сауна
+								li.disable хамам
+								li.disable соляная комната
+							.plan-price <span>1 700 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+					.subscription__plan-block.block__infinity
+						.plan-block-header
+							img(src='static/img/head3.png')
+						.plan-block-rate.main-rate
+							h2 Infinity
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li групповые занятия Less Miless
+								li групповые занятия Cycle
+								li групповые занятия HIIT
+								li сауна
+								li хамам
+								li соляная комната
+								li доступ во все клубы сети
+							.plan-price <span>2 000 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+					.subscription__plan-block.block__smart
+						.plan-block-header
+							img(src='static/img/head2.png')
+						.plan-block-rate
+							h2 Smart
+							ul
+								li тренажёрный зал
+								li браслет с электронным доступом
+								li шкафчик в раздевалке
+								li фирменное полотенце
+								li фирменная бутылка
+								li фирменный мешок
+								li групповые занятия Less Miless
+								li групповые занятия Cycle
+								li групповые занятия HIIT
+								li.disable сауна
+								li.disable хамам
+								li.disable соляная комната
+							.plan-price <span>2 000 <b>&#8381;</b> / мес</span>
+							a(class="pay" href="#") Купить абонимент
+	.main__block-key.main__block-key-two
+		.main__block-key-content
+			.container
+				.key-content-left
+					img(src='static/img/key.png')
+					p Твой ключ<br>в цифровой<br>фитнес<br><span>от 1 700 <b>&#8381;</b></span>
+				.key-content-right
+					form
+						input(placeholder="ИМЯ" type="text")
+						input(class="phone-val" placeholder="ТЕЛЕФОН" type="tel" required)
+						button(class="btn btn__midnight_express" type="submit") Получить ключ
+						.form__group
+							label.checkbox
+								input(checked type="checkbox")
+								.checkbox__text
+							p Я согласен с публичным <a href="#">договором-офертой</a><br> и <a href="#">политикой обработки персональных данных</a>

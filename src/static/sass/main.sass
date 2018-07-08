@@ -1,0 +1,76 @@
+@import 'utils/fonts'
+@import 'utils/vars.sass'
+@import 'utils/mixins.sass'
+@import "libs.sass"
+@import "normalize"
+@import 'utils/grid.sass'
+@import 'utils/header.sass'
+@import 'utils/footer.sass'
+@import 'utils/popup.sass'
+@import 'utils/buttons'
+
+body
+	padding: 0
+	margin: 0
+	-webkit-font-smoothing: antialiased
+*
+	outline: none
+a
+	text-decoration: none
+ul
+	margin: 0
+	padding: 0
+h1,h2,h3,h4,h5
+	font-weight: normal
+h1
+	font-size: $h1_size
+	font-family: $FuturaFuturisC
+	color: $midnight_express
+	margin: 0
+.hidden
+	display: none
+.breadcrumbs
+	margin: 50px auto 25px
+	ul
+		@include row-start
+		li
+			list-style: none
+			margin-right: 10px
+			a
+				font-family: $FuturaFuturisLightC
+				font-size: 24px
+				color: $tree_poppy
+				&:after
+					content: '>'
+					display: inline-block
+					position: relative
+					top: 2px
+					left: 5px
+			span
+				color: #9e9e9e
+				font-family: $FuturaFuturisLightC
+				font-size: 24px
+@media (max-width: $xs)
+	.breadcrumbs
+		margin: 15px auto 10px
+		a,span
+			font-size: 18px!important
+	h1
+		font-size: 36px
+
+// Главная страница
+@import 'pages/index/index.sass'
+// Расписание страница
+@import 'pages/raspisanie/raspisanie.sass'
+// Абонимент страница
+@import 'pages/aboniment/aboniment.sass'
+// Тренеры страница
+@import 'pages/treneri/treneri.sass'
+// Полезное страница
+@import 'pages/poleznoe/poleznoe.sass'
+// О клубе страница
+@import 'pages/o-clube/o-clube.sass'
+// Клубы страница
+@import 'pages/clubi/clubi.sass'
+// Ошибка страница
+@import 'pages/error/error.sass'

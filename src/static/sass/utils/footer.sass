@@ -1,0 +1,71 @@
+.footer
+	.container
+		@include row-between
+	height: 293px
+	padding: 49px 0
+	background-color: $midnight_express
+	box-sizing: border-box
+	.footer__block-one
+		p,a
+			color: $comet
+			font-family: $FuturaFuturisLightC
+			font-size: 16px
+		a
+			border-bottom: 1px solid rgba(98, 103, 134, 0.68)
+	.footer__block-two
+		ul
+			li
+				list-style: none
+				a
+					font-family: $FuturaFuturisC
+					font-size: 20px
+					color: $white
+					text-transform: uppercase
+					margin-bottom: 10px
+					display: block
+	.footer__block-tree
+		margin-right: 80px
+		a
+			color: $white
+			font-family: $FuturaFuturisLightC
+			font-size: 24px
+			display: block
+			margin-bottom: 10px
+			&:nth-child(2)
+				margin-bottom: 17px
+	.footer-social
+		@include row-between
+		margin-top: 10px
+		a
+			width: 56px
+			height: 56px
+			margin-right: 16px
+			&.vk
+				position: relative
+				top: 2px
+			&:last-child
+				margin-right: 0
+
+
+@media (max-width: $xs)
+	.footer
+		height: inherit
+		.container
+			flex-direction: column
+		.footer__block-one,.footer__block-two
+			margin-bottom: 45px
+
+@media only screen and (min-width: $sm) and (max-width: 767px)
+	.footer
+		.container
+			align-items: center
+		.footer__block-tree,.footer__block-one,.footer__block-two
+			width: 290px
+			position: relative
+			margin-right: 0
+		.footer-social
+			justify-content: flex-start
+@media (min-width: $md)
+	.footer
+		.footer__block-tree
+			margin: 0

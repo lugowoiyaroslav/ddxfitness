@@ -1,0 +1,46 @@
+{
+  "name": "fitness",
+  "version": "1.0.0",
+  "description": "fitness",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ярик Луговой",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "font-face-mixin": "^1.1.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^3.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-tinypng": "^1.0.2",
+    "node-normalize-scss": "^8.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "jquery.inputmask": "^3.3.4",
+    "jquery.maskedinput": "^1.4.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "materialize-css": "^0.100.2",
+    "modernizr": "^3.6.0",
+    "normalize-css": "^2.3.1",
+    "slick-carousel": "^1.8.1",
+    "svg4everybody": "^2.1.9",
+    "swiper": "^4.2.6"
+  }
+}

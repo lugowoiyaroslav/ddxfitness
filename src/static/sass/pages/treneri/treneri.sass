@@ -1,0 +1,199 @@
+.trainers__main
+	@include row-start
+	margin: 40px 0
+.trainers__main-menu
+	height: 300px
+	width: 210px
+	margin-right: 20px
+	background-color: $whisper
+	padding: 50px 14px
+	box-sizing: border-box
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		li
+			list-style: none
+			&.current
+				a
+					font-family: $FuturaFuturisC-Bold
+					font-weight: 900
+			a
+				font-family: $FuturaFuturisC
+				font-size: 17px
+				color: $midnight_express
+				text-transform: uppercase
+.trainers__main-list
+	width: 1010px
+	@include row-start
+	flex-wrap: wrap
+	.trainers__main-card
+		width: 495px
+		height: 256px
+		&:nth-child(odd)
+			margin-right: 20px
+		@include row-start
+		margin-bottom: 35px
+		.card-img
+			margin-right: 20px
+			width: 190px
+			height: 256px
+		.card-description
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			h2
+				margin: 0
+				white-space: nowrap
+				a
+					font-family: $FuturaFuturisC
+					font-size: 30px
+					color: $midnight_express
+			.post
+				font-family: $FuturaFuturisC
+				font-size: 16px
+				color: #636363
+				text-transform: uppercase
+				white-space: nowrap
+			p
+				font-family: $FuturaFuturisLightC
+				font-size: 21px
+				color: $midnight_express
+				margin: 0
+				width: 285px
+			.online-trainers
+				background-color: $midnight_express
+				font-family: $FuturaMediumC
+				font-size: 24px
+				color: $white
+				text-transform: uppercase
+				display: flex
+				max-width: 270px
+				height: 70px
+				align-items: center
+				justify-content: center
+				border-radius: 4px
+				transition: box-shadow .3s ease-in-out
+				&:hover
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4)
+
+@media only screen and (min-width: $lg) and (max-width: 1279px)
+	.trainers__main-list
+		width: 100%
+		.trainers__main-card
+			width: 50%
+			box-sizing: border-box
+			&:nth-child(odd)
+					margin-right: 0
+					padding-right: 10px
+			.card-img
+				width: 150px
+				height: auto
+				img
+					width: 150px
+			.card-description
+				h2
+					a
+						font-size: 20px
+				p
+					font-size: 18px
+					width: auto
+				.post
+					font-size: 14px
+					white-space: normal
+				.online-trainers
+					height: 50px
+					font-size: 18px
+@media only screen and (min-width: 768px) and (max-width: 1365px)
+	.trainers__main-list
+		.trainers__main-card
+			.card-description
+				.online-trainers
+					font-size: 18px
+					height: 50px
+					line-height: 56px
+					display: block
+					text-align: center
+@media only screen and (max-width: $xs)
+	.trainers__main
+		flex-wrap: wrap
+		margin: 20px 0 40px
+		justify-content: center
+	.trainers__main-menu
+		width: 100%
+		max-width: 290px
+		margin-right: 0
+		height: inherit
+		padding: 15px
+		ul
+			li
+				margin-bottom: 35px
+				position: relative
+				&:last-child
+					margin-bottom: 0
+				&.current
+					&:after
+						content: ''
+						width: 19px
+						height: 12px
+						top: 6px
+						right: 0
+						display: block
+						position: absolute
+						background: url('../img/tr-arrow.png') no-repeat right center
+						transform: rotate(0deg)
+						transition: transform .3s linear, -webkit-transform .3s linear
+				&.drop-close
+					&:after
+						content: ''
+						width: 19px
+						height: 12px
+						top: 3px
+						display: block
+						transform: rotate(180deg)
+				&.drop-close
+					margin-bottom: 0
+	.trainers__main-list
+		width: 100%
+		justify-content: center
+		.trainers__main-card
+			width: 100%
+			max-width: 290px
+			flex-wrap: wrap
+			height: inherit
+			margin-bottom: 0
+			margin-top: 35px
+			&:nth-child(odd)
+				margin-right: 0
+			.card-img
+				width: 100%
+				margin-right: 0
+				height: inherit
+				img
+					width: 100%
+					height: 254px
+					object-fit: cover
+					object-position: top
+					border-top-left-radius: 4px
+					border-top-right-radius: 4px
+				.online-trainers
+					background-color: $midnight_express
+					font-family: $FuturaMediumC
+					font-size: 24px
+					color: $white
+					text-transform: uppercase
+					display: block
+					max-width: 100%
+					height: 70px
+					line-height: 76px
+					text-align: center
+					position: relative
+					top: -5px
+					border-bottom-left-radius: 4px
+					border-bottom-right-radius: 4px
+			.card-description
+				width: 100%
+				margin-top: 20px
+				.post
+					margin: 20px 0

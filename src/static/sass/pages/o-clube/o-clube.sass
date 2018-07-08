@@ -1,0 +1,303 @@
+.about
+	margin-bottom: 100px
+.about__tab-header
+	ul
+		@include row-start
+		li
+			list-style: none
+	a
+		font-family: $FuturaFuturisC
+		font-size: 72px
+		color: $midnight_express
+		margin-right: 85px
+		&.active
+			border-bottom: 5px solid $tree_poppy
+.about__tab-content
+	margin-top: 60px
+.about__block
+	@include row-start
+	.faq
+		width: 50%
+		.faq-content
+			margin-bottom: 60px
+			&:last-child
+				margin-bottom: 0
+			a
+				font-family: $FuturaFuturisC
+				font-size: 30px
+				padding-left: 40px
+				color: $midnight_express
+				background: url('../img/plus.png') no-repeat 0 7px
+				&.active
+					background: url('../img/minus.png') no-repeat 0 15px
+			p
+				font-family: $FuturaFuturisLightC
+				font-size: 30px
+				color: $midnight_express
+				display: none
+				padding-left: 40px
+	.address
+		width: 50%
+		padding-left: 100px
+		box-sizing: border-box
+		h5
+			font-family: $FuturaFuturisC
+			font-size: 30px
+			color: $midnight_express
+			margin: 0 0 33px
+			font-weight: normal
+		p
+			font-family: $FuturaFuturisLightC
+			font-size: 30px
+			color: $midnight_express
+			margin: 0 0 53px
+			&:last-child
+				margin-bottom: 0
+.contacts__block
+	@include row-start
+	.col-3
+		width: calc(100% / 3)
+		h5
+			font-family: $FuturaFuturisC
+			font-size: 30px
+			color: $midnight_express
+			font-weight: normal
+			margin: 0 0 25px
+		p
+			font-family: $FuturaFuturisLightC
+			font-size: 30px
+			color: $midnight_express
+			margin: 0
+		a
+			font-family: $FuturaFuturisC
+			font-size: 30px
+			color: $midnight_express
+			display: block
+		.contacts__block-info
+			margin-top: 50px
+.faq-club
+	@include row-between
+	margin: 20px 0
+	.faq-content
+		width: calc(50% - 20px)
+		margin-bottom: 45px
+		padding: 10px
+		box-sizing: border-box
+		p
+			display: none
+			font-family: $FuturaFuturisLightC
+			font-size: 30px
+			color: $midnight_express
+			padding-left: 152px
+		a
+			font-family: $FuturaFuturisC
+			font-size: 30px
+			color: $midnight_express
+			padding-left: 150px
+			display: flex
+			line-height: 45px
+			align-items: center
+			position: relative
+			&:before
+				content: ''
+				display: flex
+				width: 88px
+				min-width: 88px
+				height: 88px
+				margin-right: 46px
+				background: url('../img/faq-plus.png') no-repeat 0 0
+				position: absolute
+				left: 20px
+			&.active
+				&:before
+					content: ''
+					display: flex
+					width: 126px
+					min-width: 126px
+					height: 94px
+					left: 0
+					background: url('../img/faq-minus.png') no-repeat 0 0
+		&.active
+			background-color: $whisper
+@media only screen and (min-width: 992px) and (max-width: 1365px)
+	.about__block
+		.faq
+			.faq-content
+				a
+					display: block
+					height: 37px
+					line-height: 42px
+@media only screen and (min-width: 768px) and (max-width: 1279px)
+	.faq-club
+		@include row-between
+		margin: 20px 0
+		.faq-content
+			width: calc(50% - 20px) !important
+			padding: 15px
+			margin-bottom: 20px
+			p
+				font-size: 18px
+				padding-left: 62px
+				max-width: 240px
+			a
+				font-size: 18px
+				line-height: normal
+				padding-left: 60px
+				max-width: 240px
+				&:before
+					content: ''
+					width: 40px
+					min-width: 40px
+					height: 40px
+					margin-right: 46px
+					background: url('../img/faq-plus-m.png') no-repeat 0 0
+					position: absolute
+					left: 0
+				&.active
+					&:before
+						content: ''
+						width: 57px
+						min-width: 57px
+						height: 42px
+						left: -7px
+						background: url('../img/faq-minus-m.png') no-repeat 0 0
+@media only screen and (min-width: $md) and (max-width: 991px)
+	.about
+		margin-bottom: 0
+	.about__tab-header
+		a
+			font-size: 36px
+			margin-right: 30px
+		ul
+			justify-content: flex-start
+	.about__block
+		.faq
+			.faq-content
+				margin-bottom: 30px
+				a
+					font-size: 20px
+					display: block
+					height: 24px
+					line-height: 27px
+					background: url(../img/plus.png) no-repeat 0 0;
+					&.active
+						background: url(../img/minus.png) no-repeat 0 10px
+				p
+					font-size: 20px
+					padding-left: 0
+		.address
+			padding-left: 0
+			h5
+				font-size: 20px
+				margin: 0 0 10px
+			p
+				font-size: 20px
+				margin: 0 0 33px
+				line-height: 30px
+				&:nth-child(2)
+					br
+						display: none
+	.contacts__block
+		.col-3
+			h5
+				font-size: 20px
+			p
+				font-size: 20px
+			a
+				font-size: 20px
+			.contacts__block-info
+				margin-top: 25px
+				margin-bottom: 25px
+
+@media only screen and (max-width: $xs)
+	.about
+		margin-bottom: 0
+	.about__tab-header
+		a
+			font-size: 36px
+			margin-right: 0
+		ul
+			justify-content: space-between
+	.about__block
+		flex-direction: column
+		.faq
+			width: 100%
+			.faq-content
+				margin-bottom: 30px
+				a
+					font-size: 20px
+					height: 24px
+					display: block
+					background: url(../img/plus.png) no-repeat 0 0;
+					&.active
+						background: url(../img/minus.png) no-repeat 0 7px
+				p
+					font-size: 20px
+					padding-left: 0
+		.address
+			width: 100%
+			padding-left: 0
+			margin-top: 30px
+			h5
+				font-size: 20px
+				margin: 0 0 10px
+			p
+				font-size: 20px
+				margin: 0 0 33px
+				line-height: 30px
+				&:nth-child(2)
+					br
+						display: none
+	.contacts__block
+		flex-direction: column
+		.col-3
+			width: 100%
+			h5
+				font-size: 20px
+			p
+				font-size: 20px
+			a
+				font-size: 20px
+			.contacts__block-info
+				margin-top: 25px
+				margin-bottom: 25px
+	.faq-club
+		@include row-between
+		margin: 20px 0
+		.faq-content
+			width: 100%!important
+			padding: 15px
+			margin-bottom: 20px
+			p
+				font-size: 18px
+				padding-left: 62px
+				max-width: 240px
+			a
+				font-size: 18px
+				line-height: normal
+				padding-left: 60px
+				max-width: 240px
+				&:before
+					content: ''
+					width: 40px
+					min-width: 40px
+					height: 40px
+					margin-right: 46px
+					background: url('../img/faq-plus-m.png') no-repeat 0 0
+					position: absolute
+					left: 0
+				&.active
+					&:before
+						content: ''
+						width: 57px
+						min-width: 57px
+						height: 42px
+						left: -7px
+						background: url('../img/faq-minus-m.png') no-repeat 0 0
+@media only screen and (min-width: $sm) and (max-width: 767px)
+	.about__tab-header
+		a
+			font-size: 36px
+			margin-right: 30px
+		ul
+			justify-content: flex-start

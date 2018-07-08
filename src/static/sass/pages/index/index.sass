@@ -1,0 +1,608 @@
+.recording
+	height: 496px
+	background-color: $whisper
+	.container
+		@include container
+		align-items: center
+		padding: 47px 0
+	p
+		color: $midnight_express
+		font-family: $FuturaFuturisC
+		font-size: 36px
+		margin: 0
+		span
+			color: $tree_poppy
+	form
+		width: 344px
+		padding: 0 2px
+		margin-top: 44px
+		input
+			width: 100%
+			height: 72px
+			background-color: $white
+			border-radius: 4px
+			border: 1px solid transparent
+			margin-bottom: 10px
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.05)
+			text-align: center
+			color: #010101
+			font-family: $FuturaFuturisLightC
+			font-size: 24px
+			box-sizing: border-box
+			transition: border .2s ease-in-out
+			&:focus
+				text-align: left
+				padding: 0 17px
+				border: 1px solid $tree_poppy
+			&[type=checkbox]
+				width: 17px
+				height: 19px
+		p
+			color: $midnight_express
+			font-family: $FuturaFuturisLightC
+			font-size: 16px
+			a
+				color: $midnight_express
+				font-family: $FuturaFuturisLightC
+				font-size: 16px
+				border-bottom: 1px solid rgba(25, 30, 59, 0.45)
+.recording form input::-webkit-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.recording form input:focus::-webkit-input-placeholder
+	color: transparent
+.recording form input::-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.recording form input:focus::-moz-placeholder
+	color: transparent
+.recording form input:-ms-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.recording form input:focus:-ms-input-placeholder
+	color: transparent
+.recording form input:-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.recording form input:focus:-moz-placeholder
+	color: transparent
+.form__group
+	@include row-between
+.checkbox input
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 20px
+.checkbox__text
+	position: relative
+	left: -20px
+	top: 4px
+	cursor: pointer
+.checkbox__text:before 
+	content: ''
+	position: absolute
+	top: -4px
+	left: 22px
+	width: 19px
+	height: 19px
+	border-radius: 4px
+	background: $midnight_express
+	transition: .2s
+.checkbox__text:after
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 11px
+	height: 11px
+	background: url('../img/check.png') no-repeat 0 0
+	transition: .2s
+	display: none
+
+.checkbox input:checked + .checkbox__text:before
+	background: $midnight_express
+.checkbox input:checked + .checkbox__text:after
+	left: 26px
+	display: block
+.slider__block
+	height: 816px
+	box-sizing: border-box
+	margin-bottom: 125px
+	position: relative
+.slider
+	.slider__item
+		height: 816px
+		position: relative
+		img
+			max-width: 100%
+			position: absolute
+			top: -20px
+			height: 816px
+			right: -1000px
+			left: -1000px
+			margin: auto
+	.slider__item-description
+		position: relative
+		top: 80px
+.photo__text
+	position: absolute
+	bottom: -100px
+.photo__text-block
+	width: 295px
+	height: 206px
+	margin-right: 20px
+	&:last-child
+		margin-right: 0
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.photo__text
+		display: block!important
+.slider__block
+	img
+		position: absolute
+		object-fit: cover
+	p
+		margin: 0
+		color: $white
+		font-family: $FuturaFuturisLightC
+		font-size: 60px
+		span
+			text-transform: uppercase
+			font-family: $FuturaFuturisC
+		&.big-text
+			font-size: 230px
+			font-family: $FuturaFuturisC
+			margin-top: 60px
+			span
+				font-size: 140px
+				font-family: $FuturaMediumC
+				font-weight: 900
+				position: relative
+				left: -30px
+			sup
+				font-size: 140px
+				font-family: $FuturaMediumC
+				font-weight: 900
+				position: relative
+				left: -80px
+		&.big-text-last
+			font-size: 76px
+			font-family: $FuturaFuturisC
+			margin-top: 60px
+			span
+				font-size: 230px
+				font-family: $FuturaMediumC
+				font-weight: 900
+		&.small-text
+			font-family: $FuturaFuturisLightC
+			font-size: 36px
+			position: relative
+			top: -30px
+			letter-spacing: 1px
+.custom-object-fit
+	position: relative
+	background-size: cover
+	background-position: center center
+	img
+		opacity: 0
+.index__page-two
+	padding-top: 102px
+	margin-bottom: 121px
+	p
+		font-size: 120px
+		&.big-text
+			margin-top: 0
+.tech
+	position: absolute
+	margin-left: 10px
+	display: inline-block!important
+.tech2
+	margin-left: 10px
+	display: inline-block!important
+	width: 163px
+	height: 43px!important
+	top: 0!important
+	left: auto!important
+	right: auto!important
+	margin-left: 10px !important
+.photo__text-block
+	position: relative
+.photo__text
+	height: 206px
+	@include row-between
+	position: absolute
+	width: 1240px
+	margin-top: 20px
+	img
+	p
+		font-family: $FuturaFuturisLightC
+		font-size: 24px
+		position: absolute
+		bottom: 20px
+		left: 10px
+		z-index: 10
+		&.sup
+			span
+				font-size: 50px
+		span
+				font-family: $FuturaFuturisC
+				margin-top: 36px
+				font-weight: 900
+				b
+					font-size: 80px
+.map
+	height: 679px
+	width: 100%
+	background: url('../img/map_bg.jpg') no-repeat 50% 0
+	img
+		max-width: 1280px
+		margin: 0 auto
+		position: relative
+		width: 1280px
+		display: block
+		top: -10px
+		&.moscow__mob
+			display: none
+.map__after
+	background-color: $tree_poppy
+	height: 110px
+	@include row-center
+	align-items: center
+	img
+		margin-right: 20px
+	p
+		font-family: $FuturaFuturisC
+		font-size: 36px
+		color: $white
+		line-height: 28px
+		span
+			font-size: 22px
+
+.main__block-key-content
+	background-color: $whisper
+	padding: 103px 0 88px
+	.container
+		@include row-between
+.key-content-left
+	@include row-between
+	width: 660px
+	margin-left: 63px
+	img
+		width: 263px
+		height: 358px
+	p
+		font-family: $FuturaFuturisC
+		font-size: 60px
+		color: $midnight_express
+		span
+			font-size: 41px
+		span.old
+			color: $tree_poppy
+			position: relative
+			margin-right: 25px
+			&:before
+				content: ''
+				width: 130px
+				height: 2px
+				background-color: $midnight_express
+				display: block;
+				transform: rotate(11deg)
+				top: 26px
+				left: 0
+				z-index: 90
+				position: absolute
+			&:after
+				content: ''
+				width: 130px
+				height: 2px
+				background-color: $midnight_express
+				display: block;
+				transform: rotate(-11deg)
+				top: 26px
+				left: 0
+				z-index: 90
+				position: absolute
+	b
+		font-family: $ALSRubl
+		font-size: 41px
+		font-weight: normal
+.key-content-right
+	margin-right: 62px
+	form
+		width: 344px
+		padding: 0 2px
+		margin-top: 44px
+		input
+			width: 100%
+			height: 72px
+			background-color: $white
+			border-radius: 4px
+			border: 1px solid transparent
+			margin-bottom: 10px
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.03)
+			text-align: center
+			color: #010101
+			font-family: $FuturaFuturisLightC
+			font-size: 24px
+			box-sizing: border-box
+			transition: border .2s ease-in-out
+			&:focus
+				text-align: left
+				padding: 0 17px
+				border: 1px solid $tree_poppy
+			&[type=checkbox]
+				width: 17px
+				height: 19px
+		p
+			color: $midnight_express
+			font-family: $FuturaFuturisLightC
+			font-size: 16px
+			margin: 0
+			a
+				color: $midnight_express
+				font-family: $FuturaFuturisLightC
+				font-size: 16px
+				border-bottom: 1px solid rgba(25, 30, 59, 0.45)
+.key-content-right form input::-webkit-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.key-content-right form input:focus::-webkit-input-placeholder
+	color: transparent
+.key-content-right form input::-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.key-content-right form input:focus::-moz-placeholder
+	color: transparent
+.key-content-right form input:-ms-input-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.key-content-right form input:focus:-ms-input-placeholder
+	color: transparent
+.key-content-right form input:-moz-placeholder
+	color: #b0b0b0
+	font-family: $FuturaFuturisLightC
+	font-size: 24px
+.key-content-right form input:focus:-moz-placeholder
+	color: transparent
+.subscription-two
+	height: 1169px!important
+	background: url(../img/subs_bg-two.jpg) no-repeat center!important
+	h1
+		margin: 0!important
+	.subscription__plan
+		.subscription__plan-block
+			.plan-block-header
+				justify-content: flex-start
+			&:nth-child(1)
+				.plan-block-header
+					margin-left: 28px
+			&:nth-child(2)
+				.plan-block-header
+					margin-left: 14px
+			&:nth-child(3)
+				.plan-block-header
+					margin-left: 41px
+.main__block-key-two
+	.main__block-key-content
+		background-color: $white
+		.key-content-left
+			p
+				span
+					font-size: 60px
+					b
+						font-size: 60px
+		.key-content-right
+			form
+				input
+					border: 1px solid $midnight_express
+					&:focus
+						border: 1px solid $tree_poppy
+@media only screen and (min-width: 1280px) and (max-width: 1360px)
+	.subscription-two
+		.subscription__plan
+			.subscription__plan-block
+				.plan-block-header
+					margin: 0!important
+					justify-content: center
+@media only screen and (min-width: $lg) and (max-width: 1365px)
+	.menu
+		ul
+			li
+				a
+					display: block
+					height: 62px
+					line-height: 68px
+@media only screen and (min-width: $lg) and (max-width: 1279px)
+	.subscription-two
+		height: inherit!important
+		background: $whisper!important
+		.plan-block-header
+			margin: 0!important
+	.photo__text
+		width: 925px
+		left: 17px
+		.photo__text-block
+			&:last-child
+				margin-right: 0
+	.map
+		height: 509px
+	.key-content-left
+		width: 600px
+		margin-left: 0
+	.key-content-right
+		margin-right: 0
+
+@media only screen and (min-width: $md) and (max-width: 991px)
+	.subscription-two
+		height: inherit!important
+		background: $whisper!important
+		.plan-block-header
+			margin-left: 0!important
+	.slider__block 
+		height: inherit
+		margin-bottom: 0
+	.photo__text
+		width: 100%
+		height: inherit
+		position: relative
+		bottom: 0
+		margin-top: 15px
+		justify-content: center
+	.photo__text-block
+		margin-right: 0
+		margin-bottom: 15px
+		width: 100%
+		max-width: 290px
+		&:nth-child(odd)
+			margin-right: 15px
+		img
+			max-width: 290px
+		&:last-child
+			margin-bottom: 0
+	.map
+		height: 490px
+		position: relative
+		overflow: auto
+		margin-top: 42px
+		img
+			display: none
+			&.moscow__mob
+				display: block
+				max-width: none
+				width: 100%
+				min-width: 1400px
+				left: -700px
+				position: absolute
+	.map__after
+		height: inherit
+		p
+			font-size: 18px
+			max-width: 465px
+			span
+				font-size: 18px
+	.main__block-key-content
+		padding: 25px 0 45px
+	.key-content-left
+		width: 50%
+		margin-left: 0
+		justify-content: flex-start!important
+		img
+			height: 118px
+			width: auto
+			position: relative
+			top: 20px
+			margin-right: 50px
+		p
+			font-size: 30px
+			span
+				display: none
+	.key-content-right
+		margin-right: 0
+		width: 50%
+		form
+			width: 100%
+			margin-top: 20px
+			padding: 0
+			p
+				margin-left: 30px
+				br
+					display: none
+
+@media (max-width: $xs)
+	.subscription-two
+		height: inherit!important
+		background: $whisper!important
+		.plan-block-header
+			margin-left: 0!important
+	.slider__block 
+		height: inherit
+		margin-bottom: 0
+	.photo__text
+		width: 100%
+		height: inherit
+		position: relative
+		bottom: 0
+		margin-top: 15px
+		justify-content: center
+	.photo__text-block
+		margin-right: 0
+		margin-bottom: 15px
+		width: 100%
+		max-width: 290px
+		img
+			max-width: 290px
+		&:last-child
+			margin-bottom: 0
+	.recording
+		height: inherit
+		p
+			text-align: center
+		.container
+			padding: 45px 15px
+		form
+			width: 100%
+			max-width: 400px
+			p
+				text-align: left
+				margin-left: 30px
+				br
+					display: none
+	.map
+		height: 490px
+		position: relative
+		overflow: auto
+		margin-top: 42px
+		img
+			display: none
+			&.moscow__mob
+				display: block
+				max-width: none
+				width: 100%
+				min-width: 1400px
+				left: -700px
+				position: absolute
+	.map__after
+		height: inherit
+		p
+			font-size: 18px
+			max-width: 165px
+			span
+				font-size: 18px
+	.main__block-key-content
+		padding: 25px 0 45px
+	.key-content-left
+		width: 100%
+		margin-left: 0
+		justify-content: center
+		img
+			height: 118px
+			width: auto
+			position: relative
+			top: 20px
+			margin-right: 25px
+		p
+			font-size: 30px
+			span
+				display: none
+	.key-content-right
+		margin-right: 0
+		form
+			width: 100%
+			margin-top: 20px
+			padding: 0
+			p
+				margin-left: 30px
+				br
+					display: none
+@media only screen and (min-width: 300px) and (max-width: 320px)
+	.photo__text
+		p
+			span
+				b
+					font-size: 60px!important
